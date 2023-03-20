@@ -1,7 +1,6 @@
-@import "../variables.scss";
+  @import "../variables.scss";
 
 .navbar {
-  width: 100%;
   background-color: $gray-color;
   height: 72px;
   display: flex;
@@ -105,24 +104,24 @@
       &-auth-button {
         width: 258px;
         height: 68px;
-        background: white;
+        background: $white-color;
         background-color: $blue-color;
         border-radius: 7px;
         border-color: $blue-color;
         border: unset;
-        box-shadow: 0px 4px #309dbc;
+        box-shadow: 0 4px $blue-color;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
 
         &:hover {
-          background-color: #00bde3;
+          background-color: $blue-color;
         }
 
         &:active {
           border: none;
           background-color: $blue-color ;
-          box-shadow: 0px -3px 0px 0px #309dbc ;
+          box-shadow: 0 -3px 0 0 $blue-color ;
         }
 
         &-icon {
@@ -131,8 +130,8 @@
 
         &-text {
           font-size: 18pt;
-          color: white; 
-          margin: 22px 23px 18px 0px;
+          color: $white-color; 
+          margin: 22px 23px 18px 0;
         }
       }
     }

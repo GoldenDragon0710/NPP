@@ -1,0 +1,76 @@
+@import "../variables.scss";
+
+.data-cat {
+    &-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &-title {
+        text-align: center;
+        font-size: 44pt;
+    }
+
+    &-construction {
+        width: 447px;
+        border: 2px solid $white-color;
+        border-radius: 4px;
+        margin: 10px;
+
+        &:hover {
+            outline-color: #00CCF5;
+            outline-style: solid;
+            outline-width: 4px;
+        }
+
+        &-update {
+            margin: 38px 0 0 36px;
+            font-size: 16pt;
+            color: #a4a4a4;
+            text-transform: uppercase;
+        }
+        &-title {
+            margin: 5px 0 0 36px;
+            font-size: 26pt;
+            color: #545454;
+        }
+        &-icon {
+            width: 81px;
+            height: 72px;
+            margin: 30px;
+        }
+        &-data {
+            display: flex;
+            margin: 30px 0 30px 36px;
+
+            &-text {
+                font-size: 19pt;
+                color: #424242;
+            }
+            &-content {
+                margin-left: 20px;
+                padding: 0 10px;
+                height: 30.12px;
+                background: white;
+                background-color: white;
+                border-radius: 5px;
+                border: 2px solid;
+                border-color: #56595a;
+                border-bottom: 0px 3px 0px 0px #56595a;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                &-icon {
+                    width: 16px;
+                    height: 16px;
+                    padding-right: 10px;
+                }
+                &-label {
+                    font-size: 14pt;
+                    color: #56595a;
+                }
+            }
+        }
+    }
+}

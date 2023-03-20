@@ -83,8 +83,107 @@
         <img src="assets/img/search.png" />
       </div>
     </nav>
+    <div class="slidebar">
+      <div class="slidebar-slideshow">
+        <div class="slidebar-slideshow-slides slidebar-slideshow-fade">
+          <img src="assets/img/slide1.png" style="width:100%">
+        </div>
+      
+        <div class="slidebar-slideshow-slides slidebar-slideshow-fade">
+          <img src="assets/img/slide2.png" style="width:100%">
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="slidebar-slideshow-prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="slidebar-slideshow-next" onclick="plusSlides(1)">&#10095;</a>
+        <!-- The dots/circles -->
+        <div class="slidebar-slideshow-dots">
+          <span class="slidebar-slideshow-dots-dot" onclick="currentSlide(1)"></span>
+          <span class="slidebar-slideshow-dots-dot" onclick="currentSlide(2)"></span>
+        </div>
+      </div>
+      <div class="slidebar-map-container">
+        <div class="slidebar-map-container-box">
+          <img id="close" src="assets/img/mapbox.png" />
+        </div>
+        <div class="slidebar-map-container-link">
+          <p class="slidebar-map-container-link-text">Interaktīvā karte</p>
+          <img class="slidebar-map-container-link-icon" src="assets/img/next.svg" />
+        </div>
+        <div class="slidebar-map-container-data">
+          <label class="slidebar-map-container-data-button">
+            <span class="slidebar-map-container-data-button-text">Operatīvie dati</span>
+          </label>
+        </div>
+        <div class="slidebar-map-container-realtime">
+          <label class="slidebar-map-container-realtime-button">
+            <img class="slidebar-map-container-realtime-button-icon" id="close" src="assets/img/dot.png" />
+            <p class="slidebar-map-container-realtime-button-text">Reāllaika</p>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="data-cat">
+      <div class="data-cat-title">
+        Datu kategorijas
+      </div>
+      <div class="data-cat-content">
+        <div class="data-cat-construction">
+          <div class="data-cat-construction-update">AtjaUnots 15.10.2022.</div>
+          <img class="data-cat-construction-icon" src="assets/img/under-construction.svg">
+          <div class="data-cat-construction-title">Īstermiņa ceļu darbi</div>
+          <div class="data-cat-construction-data">
+            <span class="data-cat-construction-data-text">1 datu kopa</span>
+            <label class="data-cat-construction-data-content">
+              <img class="data-cat-construction-data-content-icon" src="assets/img/key2.svg" />
+              <span class="data-cat-construction-data-content-label">API</span>
+            </label>
+          </div>
+        </div>
+        <div class="data-cat-construction">
+          <div class="data-cat-construction-update">REĀLLAIKA</div>
+          <img class="data-cat-construction-icon" src="assets/img/road.svg">
+          <div class="data-cat-construction-title">Autoceļu klasifikācija</div>
+          <div class="data-cat-construction-data">
+            <span class="data-cat-construction-data-text">2 datu kopas</span>
+            <label class="data-cat-construction-data-content">
+              <span class="data-cat-construction-data-content-label">LONGER TEXT TAG</span>
+            </label>
+          </div>
+        </div>
+        <div class="data-cat-construction">
+          <div class="data-cat-construction-update">REĀLLAIKA</div>
+          <img class="data-cat-construction-icon" src="assets/img/parking.svg">
+          <div class="data-cat-construction-title">Stāvlaukumi</div>
+          <div class="data-cat-construction-data">
+            <span class="data-cat-construction-data-text">2 datu kopas</span>
+            <label class="data-cat-construction-data-content">
+              <img class="data-cat-construction-data-content-icon" src="assets/img/key2.svg" />
+              <span class="data-cat-construction-data-content-label">HOVER TAG</span>
+            </label>
+          </div>
+        </div>
+        <div class="data-cat-construction">
+          <div class="data-cat-construction-update">AtjaUnots 05.09.2022.</div>
+          <img class="data-cat-construction-icon" src="assets/img/wild-animals-sign.svg">
+          <div class="data-cat-construction-title">Dzīvnieki, cilvēki, šķēršļi, atkritumi uz ceļa</div>
+          <div class="data-cat-construction-data">
+            <span class="data-cat-construction-data-text">1 datu kopa</span>
+          </div>
+        </div>
+        <div class="data-cat-construction">
+          <div class="data-cat-construction-update">AtjaUnots 05.09.2022.</div>
+          <img class="data-cat-construction-icon" src="assets/img/streets.svg">
+          <div class="data-cat-construction-title">Statiskie dati par autoceļiem: tīkla posmi un fiziskie raksturl</div>
+          <div class="data-cat-construction-data">
+            <span class="data-cat-construction-data-text">1 datu kopa</span>
+          </div>
+        </div>
+      </div>
+    </div>
     <script>
       const toggleMenu = () => document.body.classList.toggle("open");
     </script>
+    <script src="assets/js/slide.js"></script>
   </body>
 </html>

@@ -1,0 +1,170 @@
+@import "../variables.scss";
+
+.slidebar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 56px;
+
+    &-slideshow {
+        max-width: 1031px;
+        max-height: 476px;
+        position: relative;
+    
+        &-slides {
+            display: none;
+        }
+    
+        &-fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+    
+        &-prev, &-next {
+            cursor: pointer;
+            position: absolute;
+            top: 85%;
+            width: auto;
+            margin-top: 5px;
+            padding: 10px;
+            color: black;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+    
+        &-prev:hover, &-next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    
+        &-next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+    
+        &-dots {
+            text-align: center;
+            margin-top: -35px;
+        
+            &-dot {
+                cursor: pointer;
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+        
+                &:hover {
+                    background-color: #717171;
+                }
+            }
+        }
+    }
+    &-map-container {
+        width: 394px;
+        height: 476px;
+        background-color: $white-color;
+        display: flex;
+        flex-direction: column;
+    
+        &-box {
+            width: 295.03px;
+            height: 214.53px;
+            margin-left: 45px;
+            margin-top: 20px;
+        }
+    
+        &-link {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-left: 20px;
+    
+            &-text {
+                font-size: 29pt;
+                color: $font-color;
+            }
+    
+            &-icon {
+                width: 27px;
+                height: 18px;
+                margin: 23px 22px 21px 21px;
+            }
+        }
+    
+        &-data {
+            margin-left: 45px;
+    
+            &-button {
+                width: 148px;
+                height: 32px;
+                background: $gray-color;
+                background-color: $gray-color;
+                border-radius: 3px;
+                border-color: $gray-color;
+                border-bottom: 0 4px 0 0 $blue-color;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+    
+                &:hover {
+                    background-color: $gray-color;
+                }
+    
+                &-text {
+                    font-size: 12pt;
+                    color: $white-color;
+                }
+            }
+        }
+    
+        &-realtime {
+            margin-left: 45px;
+            margin-top: 20px;
+    
+            &-button {
+                width: 126px;
+                height: 32px;
+                background: $green-color;
+                background-color: $green-color;
+                border-radius: 5px;
+                border-color: $green-color;
+                border-bottom: 0 3px 0 0 $green-color;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+    
+                &:hover {
+                    background-color: $green-color;
+                }
+    
+                &-icon {
+                    width: 10px;
+                    height: 10px;
+                }
+    
+                &-text {
+                    font-size: 14pt;
+                    color: $white-color;
+                }
+            }
+        }
+    }
+}
+
+.active {
+    background-color: #717171;
+}
+
+@keyframes slidebar-slideshow-fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
