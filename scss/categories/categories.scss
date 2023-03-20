@@ -5,11 +5,13 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        margin: 50px;
     }
 
     &-title {
         text-align: center;
         font-size: 44pt;
+        margin: 50px;
     }
 
     &-construction {
@@ -51,7 +53,7 @@
             &-content {
                 margin-left: 20px;
                 padding: 0 10px;
-                height: 30.12px;
+                height: 34px;
                 background: white;
                 background-color: white;
                 border-radius: 5px;
@@ -69,6 +71,36 @@
                 &-label {
                     font-size: 14pt;
                     color: #56595a;
+                }
+
+                &:hover {
+                    background-color: #56595a;
+                }
+            }
+        }
+
+        &-background {
+            background-image: url("assets/img/link.png");
+            background-size: cover;
+            height: 100%;
+            position: relative;
+
+            &-text {
+                position: absolute;
+                top: 45%;
+                display: flex;
+                align-items: center;
+                color: white;
+                font-size: 30pt;
+                margin-left: 20px;
+                text-decoration: underline;
+
+                &-icon {
+                    width: 34px;
+                    height: 23px;
+                    margin-top: 8px;
+                    margin-left: 10px;
+                    fill: white;
                 }
             }
         }

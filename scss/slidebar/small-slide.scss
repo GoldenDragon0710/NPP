@@ -1,0 +1,9 @@
+@import "../variables.scss";
+
+.small-slidebar {
+    max-width: 694px;
+    
+    &-slides {
+        width: 100%;
+    }
+}

@@ -1,0 +1,55 @@
+@import "../variables.scss";
+
+.footer-middle-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+
+    &-menus {
+        display: flex;
+        &-icon {
+            
+        }
+
+        &-link {
+            color: $white-color;
+            font-size: 22pt;
+            margin-left: 56px;
+            cursor: pointer;
+
+            &-icon {
+                width: 15px;
+                height: 15px;
+                rotate: 90deg;
+                filter: brightness(0) invert(1);
+            }
+
+            &:hover {
+                color: $blue-color;
+                fill: #ff330a;
+            }
+        }
+    }
+
+    &-social {
+        display: flex;
+        justify-content: space-between;
+
+        &-sites {
+            display: grid;
+            align-items: center;
+            margin: 0 20px;
+            filter: brightness(0) invert(1);
+
+            & img {
+                margin: 20px 0      ;
+            }
+        }
+
+        &-mailinfo {
+            font-size: 18pt;
+            color: $white-color;
+        }
+    }
+}

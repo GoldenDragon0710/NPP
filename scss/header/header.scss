@@ -1,4 +1,4 @@
-  @import "../variables.scss";
+@import "../variables.scss";
 
 .navbar {
   background-color: $gray-color;
@@ -46,6 +46,27 @@
         font-family: $NPPfont;
         font-size: 25px;
       }
+
+      &-dropdown {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+
+        & a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+
+          &:hover {
+            background-color: #f1f1f1
+          }
+        }
+      }
+      
     }
   }
 
@@ -85,11 +106,6 @@
     &-left {
       width: 350px;
       height: 140px;
-    }
-
-    &-center {
-      width: 575px;
-      height: 156px;
     }
   }
 

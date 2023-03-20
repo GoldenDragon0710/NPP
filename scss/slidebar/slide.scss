@@ -2,12 +2,13 @@
 
 .slidebar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 56px;
 
     &-slideshow {
         max-width: 1031px;
         max-height: 476px;
+        margin-right: 35px;
         position: relative;
     
         &-slides {
@@ -84,7 +85,7 @@
             margin-left: 20px;
     
             &-text {
-                font-size: 29pt;
+                font-size: 25pt;
                 color: $font-color;
             }
     

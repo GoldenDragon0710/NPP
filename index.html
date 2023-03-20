@@ -4,13 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="index.css">
     <title>NPP</title>
   </head>
   <body>
     <div class="header">
       <img src="assets/img/logo1.png" class="header-logo-left" />
-      <img src="assets/img/logo2.png" class="header-logo-center" />
+      <div class="small-slidebar w3-content w3-section">
+        <img class="small-slidebar-slides" src="assets/img/small-slide1.png">
+        <img class="small-slidebar-slides" src="assets/img/small-slide2.png">
+      </div>
       <div class="header-setting">
         <div class="header-setting-up">
           <div class="valoda-select">
@@ -76,6 +80,13 @@
             Par platformu
             <img src="assets/img/arrow.svg" class="navbar-arrow-icon"/>
           </button>
+          <div class="navbar-menu-tab-dropdown">
+            <a href="#">PAR NPP PROJEKTU</a>
+            <a href="#">PLATFORMAS STATISTIKA</a>
+            <a href="#">PRIVĀTUMA POLITIKA</a>
+            <a href="#">KONFIDENCIALITĀTE</a>
+            <a href="#">KONTAKTI</a>
+          </div>
         </div>
       </div>
       <div class="navbar-search">
@@ -128,7 +139,8 @@
         Datu kategorijas
       </div>
       <div class="data-cat-content">
-        <div class="data-cat-construction">
+        
+        <div class="data-cat-construction" onmouseover="mouseover1()" onmouseleave="mouseleave1()">
           <div class="data-cat-construction-update">AtjaUnots 15.10.2022.</div>
           <img class="data-cat-construction-icon" src="assets/img/under-construction.svg">
           <div class="data-cat-construction-title">Īstermiņa ceļu darbi</div>
@@ -139,8 +151,14 @@
               <span class="data-cat-construction-data-content-label">API</span>
             </label>
           </div>
+          <div id="button1" hidden="true">
+            <button class="data-cat-construction-button" type="button" >
+              <img class="data-cat-construction-button-icon" src="assets/img/arrow_enter.svg" />
+              <p class="data-cat-construction-button-font">Aplūkot</p>
+            </button>
+          </div>
         </div>
-        <div class="data-cat-construction">
+        <div class="data-cat-construction" onmouseover="mouseover2()" onmouseleave="mouseleave2()">
           <div class="data-cat-construction-update">REĀLLAIKA</div>
           <img class="data-cat-construction-icon" src="assets/img/road.svg">
           <div class="data-cat-construction-title">Autoceļu klasifikācija</div>
@@ -150,8 +168,14 @@
               <span class="data-cat-construction-data-content-label">LONGER TEXT TAG</span>
             </label>
           </div>
+          <div id="button2" hidden="true">
+            <button class="data-cat-construction-button" type="button" >
+              <img class="data-cat-construction-button-icon" src="assets/img/arrow_enter.svg" />
+              <p class="data-cat-construction-button-font">Aplūkot</p>
+            </button>
+          </div>
         </div>
-        <div class="data-cat-construction">
+        <div class="data-cat-construction" onmouseover="mouseover3()" onmouseleave="mouseleave3()">
           <div class="data-cat-construction-update">REĀLLAIKA</div>
           <img class="data-cat-construction-icon" src="assets/img/parking.svg">
           <div class="data-cat-construction-title">Stāvlaukumi</div>
@@ -162,22 +186,103 @@
               <span class="data-cat-construction-data-content-label">HOVER TAG</span>
             </label>
           </div>
+          <div id="button3" hidden="true">
+            <button class="data-cat-construction-button" type="button" >
+              <img class="data-cat-construction-button-icon" src="assets/img/arrow_enter.svg" />
+              <p class="data-cat-construction-button-font">Aplūkot</p>
+            </button>
+          </div>
         </div>
-        <div class="data-cat-construction">
+        <div class="data-cat-construction" onmouseover="mouseover4()" onmouseleave="mouseleave4()">
           <div class="data-cat-construction-update">AtjaUnots 05.09.2022.</div>
           <img class="data-cat-construction-icon" src="assets/img/wild-animals-sign.svg">
           <div class="data-cat-construction-title">Dzīvnieki, cilvēki, šķēršļi, atkritumi uz ceļa</div>
           <div class="data-cat-construction-data">
             <span class="data-cat-construction-data-text">1 datu kopa</span>
           </div>
+          <div id="button4" hidden="true">
+            <button class="data-cat-construction-button" type="button" >
+              <img class="data-cat-construction-button-icon" src="assets/img/arrow_enter.svg" />
+              <p class="data-cat-construction-button-font">Aplūkot</p>
+            </button>
+          </div>
         </div>
-        <div class="data-cat-construction">
+        <div class="data-cat-construction" onmouseover="mouseover5()" onmouseleave="mouseleave5()">
           <div class="data-cat-construction-update">AtjaUnots 05.09.2022.</div>
           <img class="data-cat-construction-icon" src="assets/img/streets.svg">
           <div class="data-cat-construction-title">Statiskie dati par autoceļiem: tīkla posmi un fiziskie raksturl</div>
           <div class="data-cat-construction-data">
             <span class="data-cat-construction-data-text">1 datu kopa</span>
           </div>
+          <div id="button5" hidden="true">
+            <button class="data-cat-construction-button" type="button" >
+              <img class="data-cat-construction-button-icon" src="assets/img/arrow_enter.svg" />
+              <p class="data-cat-construction-button-font">Aplūkot</p>
+            </button>
+          </div>
+        </div>
+        <div class="data-cat-construction">
+          <div class="data-cat-construction-background">
+            <div class="data-cat-construction-background-text">
+              Visas kategorijas
+              <img class="data-cat-construction-background-text-icon" src="assets/img/next.svg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="data-provide">
+      <div class="data-provide-title">Datus sniedz</div>
+      <div class="data-provide-content">
+        <div class="data-provide-content-item">
+          <div class="data-provide-content-item-title">
+            <img class="data-provide-content-item-title-icon" src="assets/img/lvc-logo.svg">
+          </div>
+          <div class="data-provide-content-item-description">Latvijas Valsts Ceļi</div>
+          <a>www.lvceli.lv</a>
+        </div>
+        <div class="data-provide-content-item">
+          <div class="data-provide-content-item-title">
+            <img class="data-provide-content-item-title-icon" src="assets/img/LVGlogo.png">
+          </div>
+          <div class="data-provide-content-item-description">Latvijas Vides ģeoloģijas un meteoroloģijas centrs</div>
+          <a>videscentrs.lvgmc.lv</a>
+        </div>
+        <div class="data-provide-content-item">
+          <div class="data-provide-content-item-background">
+            <div class="data-provide-content-item-background-text">
+              Visi datu devēji
+              <img class="data-provide-content-item-background-text-icon" src="assets/img/next.svg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w3-container w3-center w3-margin-top">
+      <img src="assets/img/small-slide1.png" />
+    </div>
+    <div class="footer-up-container"></div>
+    <div class="footer-middle-container">
+      <div class="footer-middle-container-menus">
+        <img class="footer-middle-container-menus-icon" src="assets/img/location.png">
+        <div class="footer-middle-container-menus-link">
+          <img class="footer-middle-container-menus-link-icon" src="assets/img/up.svg"> Datu katalogs
+        </div>
+        <div class="footer-middle-container-menus-link">
+          <img class="footer-middle-container-menus-link-icon" src="assets/img/up.svg"> Interaktīvā karte
+        </div>
+        <div class="footer-middle-container-menus-link">
+          <img class="footer-middle-container-menus-link-icon" src="assets/img/up.svg"> Autorizēties
+        </div>
+      </div>
+      <div class="footer-middle-container-social">
+        <div class="footer-middle-container-social-sites">
+          <img src="assets/img/facebook.svg">
+          <img src="assets/img/twitter.svg">
+        </div>
+        <div class="footer-middle-container-social-mailinfo">
+          npp@npp.gov.lv<br/>
+          <u>Kontakti</u>
         </div>
       </div>
     </div>
@@ -185,5 +290,6 @@
       const toggleMenu = () => document.body.classList.toggle("open");
     </script>
     <script src="assets/js/slide.js"></script>
+    <script src="assets/js/small-slide.js"></script>
   </body>
 </html>
