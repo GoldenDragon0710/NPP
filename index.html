@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css">
+    <title>NPP</title>
+  </head>
+  <body>
+    <div class="header">
+      <img src="assets/img/logo1.png" class="header-logo-left" />
+      <img src="assets/img/logo2.png" class="header-logo-center" />
+      <div class="header-setting">
+        <div class="header-setting-up">
+          <div class="valoda-select">
+            <select>
+              <option value="0">Valoda</option>
+              <option value="1">Latviski</option>
+              <option value="2">English</option>
+            </select>
+          </div>
+          <div class="setting-select" style="width:200px;">
+            <select>
+              <option value="0">Iestatījumi</option>
+              <option value="disabled">Fonta izmērs</option>
+              <option value="2">100%</option>
+              <option value="3">150%</option>
+              <option value="4">200%</option>
+              <option value="disabled">Kontrasts</option>
+              <option value="images">
+                <div>
+                  <img src='eye1.png'/>
+                  <img src='eye2.png'/>
+                  <img src='eye3.png'/>
+                  <img src='eye4.png'/>
+                </div>
+              </option>
+            </select>
+          </div>
+        </div>
+        <div class="header-setting-down">
+          <button class = "header-setting-down-auth-button" type="button">
+            <img class="header-setting-down-auth-button-icon" src="assets/img/key.svg" />
+            <p class="header-setting-down-auth-button-text">Autorizēties</p>
+          </button>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar">
+      <div class="navbar-menu">
+        <div class="navbar-icon-tab">
+          <button class="navbar-menu-tab-content">
+            <img src="assets/img/home.svg" />
+          </button>
+        </div>
+        <div class="navbar-menu-tab">
+          <button class="navbar-menu-tab-content">
+            Datu servisi
+            <img src="assets/img/arrow.svg" class="navbar-arrow-icon"/>
+          </button>
+        </div>
+        <div class="navbar-menu-tab">
+          <button class="navbar-menu-tab-content">
+            KARTE
+          </button>
+        </div>
+        <div class="navbar-menu-tab">
+          <button class="navbar-menu-tab-content">
+            Kļūsti par partneri
+            <img src="assets/img/arrow.svg" class="navbar-arrow-icon"/>
+          </button>
+        </div>
+        <div class="navbar-menu-tab">
+          <button class="navbar-menu-tab-content">
+            Par platformu
+            <img src="assets/img/arrow.svg" class="navbar-arrow-icon"/>
+          </button>
+        </div>
+      </div>
+      <div class="navbar-search">
+        <input type="text" placeholder="Meklēt" >
+        <img src="assets/img/search.png" />
+      </div>
+    </nav>
+    <script>
+      const toggleMenu = () => document.body.classList.toggle("open");
+    </script>
+  </body>
+</html>

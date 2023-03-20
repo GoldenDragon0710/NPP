@@ -1,0 +1,140 @@
+@import "../variables.scss";
+
+.navbar {
+  width: 100%;
+  background-color: $gray-color;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  color: $white-color;
+  z-index: 1;
+  align-items: stretch;
+  padding: 0 5px;
+
+  &-icon-tab {
+    background-color: $gray-color;
+    display: flex;
+    align-items: center;
+    padding : 0 25px;
+    margin-right: 5px;
+
+    &:hover {
+      background-color: $light-gray-color;
+    }
+  }
+
+  &-menu {
+    display: flex;
+    &-tab {
+      padding : 0 25px;
+      display: flex;
+      align-items: center;
+      background-color: $gray-color;
+  
+      &:hover {
+        background-color: $light-gray-color;
+        cursor: pointer;
+      }
+  
+      &-content {
+        text-transform: uppercase;
+        border: 0;
+        padding: 0;
+        cursor: pointer;
+        background: transparent;
+        line-height: 1;
+        color: inherit;
+        font-family: $NPPfont;
+        font-size: 25px;
+      }
+    }
+  }
+
+  &-arrow-icon {
+    rotate: 180deg;
+    margin-top: -2px;
+  }
+  &-search {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    & input {
+      width: 280px;
+      height: 32px;
+      font-size: 17pt;
+      padding: 5px 40px 5px 20px;
+      margin-right: 20px;
+      border-radius: 5px;
+    }
+
+    & img {
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      right: 32px;
+    }
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 10px;
+
+  &-logo {
+    &-left {
+      width: 350px;
+      height: 140px;
+    }
+
+    &-center {
+      width: 575px;
+      height: 156px;
+    }
+  }
+
+  &-setting {
+    &-up {
+      
+    }
+
+    &-down {
+      margin-top: 10px;
+
+      &-auth-button {
+        width: 258px;
+        height: 68px;
+        background: white;
+        background-color: $blue-color;
+        border-radius: 7px;
+        border-color: $blue-color;
+        border: unset;
+        box-shadow: 0px 4px #309dbc;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        &:hover {
+          background-color: #00bde3;
+        }
+
+        &:active {
+          border: none;
+          background-color: $blue-color ;
+          box-shadow: 0px -3px 0px 0px #309dbc ;
+        }
+
+        &-icon {
+          margin: 22px 17px 18px 19px;
+        }
+
+        &-text {
+          font-size: 18pt;
+          color: white; 
+          margin: 22px 23px 18px 0px;
+        }
+      }
+    }
+  }
+}
