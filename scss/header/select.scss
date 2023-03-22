@@ -1,0 +1,110 @@
+@import "../responsive.scss";
+
+.custom-select2 {
+    position: relative;
+    width: 200px;
+    margin: 10px;
+
+    @include responsive(laptop){
+        width: 150px;
+    }
+  }
+  
+  .custom-select2 select {
+    display: none; /*hide original SELECT element: */
+  }
+  
+  .select-selected2 {
+    border-color: #dbdcdc;
+  }
+  
+  .select-selected2:focus {
+    outline: 3px solid #33d6f7;
+    border: 1px solid #4d4f50;
+  }
+  
+  select option:hover {
+    outline: 3px solid #33d6f7;
+  }
+  
+  /* Style the arrow inside the select element: */
+  .select-selected2:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #4d4f50 transparent transparent transparent;
+  }
+  
+  /* Point the arrow upwards when the select box is open (active): */
+  .select-selected2.select-arrow-active2:after {
+    border-color: transparent transparent #4d4f50 transparent;
+    top: 7px;
+  }
+  
+  .select-selected2:before {
+    content: "";
+    background-image: url(assets/img/water.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 30px; /* to create space for the SVG icon */
+  }
+  
+  /* style the items (options), including the selected item: */
+  .select-items2 div,.select-selected2 {
+    color: #4d4f50;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  /* Style items (options): */
+  .select-items2 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: white;
+  }
+  
+  .select-items2:hover {
+    /* outline: 3px solid #33d6f7;
+    border: 1px solid #4d4f50; */
+  }
+  
+  /* Hide the items when the select box is closed: */
+  .select-hide2 {
+    display: none;
+  }
+  
+  .select-items2 div:hover, .same-as-selected2 {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .my-option2 {
+    background-image: url(assets/img/water.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 30px; /* to create space for the SVG icon */
+  }
+  
+  .same-as-selected2::after {
+    content: "";
+    background-image: url(assets/img/check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-right: 30px;
+    height: 15px;
+    position: absolute;
+    right: 10px;
+  }
+  
+  .select-title2 option {
+    font-weight: bold;
+  }
+  

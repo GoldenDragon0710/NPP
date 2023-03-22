@@ -1,0 +1,9 @@
+@import "./variables.scss";
+
+@mixin footer-categories($width) {
+    color: $white-color;
+    font-size: 20pt;
+    margin-left: 45px;
+    cursor: pointer;
+    width: $width;
+}

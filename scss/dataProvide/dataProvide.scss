@@ -6,7 +6,8 @@
     &-title {
         text-align: center;
         font-size: 44pt;
-        margin: 50px;
+        margin: 100px 50px 50px 50px;
+        font-weight: bold;
     }
 
     &-content {
@@ -43,6 +44,9 @@
             & a {
                 color: #00CCF5;
                 font-size: 21pt;
+                &:hover {
+                    cursor: pointer;
+                }
             }
             &-background {
                 background-image: url("assets/img/link2.png");
@@ -57,15 +61,19 @@
                     align-items: center;
                     color: white;
                     font-size: 30pt;
-                    margin-left: 20px;
+                    margin-left: 35px;
                     text-decoration: underline;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
         
                     &-icon {
                         width: 34px;
                         height: 23px;
                         margin-top: 8px;
                         margin-left: 10px;
-                        fill: white;
+                        filter: brightness(0) invert(1);
                     }
                 }
             }

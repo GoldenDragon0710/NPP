@@ -1,15 +1,21 @@
 @import "../variables.scss";
+@import "../mixins.scss";
 
 .footer-middle-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 60px;
+    // flex-wrap: wrap;
+    padding: 0 50px;
+    background: url(assets/img/footer-back.png);
+    background-size: cover;
+    height: 209px;
 
     &-menus {
         display: flex;
+        align-items: center;
         &-icon {
-            
+
         }
 
         &-link {
@@ -22,12 +28,12 @@
                 width: 15px;
                 height: 15px;
                 rotate: 90deg;
+
                 filter: brightness(0) invert(1);
-            }
+            }            
 
             &:hover {
-                color: $blue-color;
-                fill: #ff330a;
+                filter: invert(41%) sepia(91%) saturate(1896%) hue-rotate(164deg) brightness(99%) contrast(101%);
             }
         }
     }
@@ -39,17 +45,49 @@
         &-sites {
             display: grid;
             align-items: center;
-            margin: 0 20px;
+            margin-right: 40px;
             filter: brightness(0) invert(1);
 
             & img {
-                margin: 20px 0      ;
+                margin: 15px 0;
+                width: 40px;
+
+                &:hover {
+                    cursor: pointer;
+                }
             }
         }
 
-        &-mailinfo {
-            font-size: 18pt;
-            color: $white-color;
+        &-mail {
+            display: flex;
+            align-items: center;
+            &-info {
+                font-size: 18pt;
+                color: $white-color;
+            }
         }
+    }
+}
+
+.footer-up-container {
+    background: url(assets/img/lvc_foot_vasara.svg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+
+.footer-end {
+    background-color: #f4f4f6;
+
+    &-font {
+        font-size: 18pt;
+        font-family: "Montserrat", Semi Bold;
+        color: #4d4f50;
+        margin: auto;
+        height: 115px;
+        align-items: center;
+        display: flex;
+        justify-items: center;
+        padding: 50px 280px;
     }
 }

@@ -5,13 +5,14 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin: 50px;
+        margin: 10px;
     }
 
     &-title {
         text-align: center;
         font-size: 44pt;
         margin: 50px;
+        font-weight: bold;
     }
 
     &-construction {
@@ -33,7 +34,7 @@
             text-transform: uppercase;
         }
         &-title {
-            margin: 5px 0 0 36px;
+            margin: 5px 20px 0 36px;
             font-size: 26pt;
             color: #545454;
         }
@@ -42,6 +43,13 @@
             height: 72px;
             margin: 30px;
         }
+
+        &-dot {
+            width: 24px;
+            height: 25px;
+            margin: 12px 20px;
+        }
+
         &-data {
             display: flex;
             margin: 30px 0 30px 36px;
@@ -50,32 +58,162 @@
                 font-size: 19pt;
                 color: #424242;
             }
+
             &-content {
-                margin-left: 20px;
-                padding: 0 10px;
-                height: 34px;
-                background: white;
+                background: #4d4f50;
                 background-color: white;
-                border-radius: 5px;
+                border-radius: 3px;
                 border: 2px solid;
-                border-color: #56595a;
-                border-bottom: 0px 3px 0px 0px #56595a;
+                border-color: #4d4f50;
                 display: flex;
                 justify-content: space-evenly;
                 align-items: center;
+                font-size: 14pt;
+                margin: 0px 20px;
+                height: 34px;
+                min-width: 85px;
+
+                &:hover {
+                    filter: invert(1);
+                    background-color: #b2b0af;
+                    border-color: #b2b0af;
+                    color: black;
+                }
+            }
+
+            &-content1 {
+                background: #4d4f50;
+                background-color: white;
+                border-radius: 3px;
+                border: 2px solid;
+                border-color: #4d4f50;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                font-size: 14pt;
+                margin: 0px 20px;
+                height: 34px;
+                min-width: 85px;
+
+                &:hover {
+                    filter: invert(1);
+                    background-color: #b2b0af;
+                    border-color: #b2b0af;
+                    color: black;
+                }
+
                 &-icon {
                     width: 16px;
                     height: 16px;
-                    padding-right: 10px;
+                    margin: 8px -2px 8px 14px;
                 }
                 &-label {
                     font-size: 14pt;
-                    color: #56595a;
+                    margin: 11px;
                 }
+            }
+
+            &-content2 {
+                background: #4d4f50;
+                background-color: white;
+                border-radius: 3px;
+                border: 2px solid;
+                border-color: #4d4f50;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                font-size: 14pt;
+                margin: 0px 20px;
+                height: 34px;
+                min-width: 175px;
 
                 &:hover {
-                    background-color: #56595a;
+                    filter: invert(1);
+                    background-color: #b2b0af;
+                    border-color: #b2b0af;
+                    color: black;
                 }
+
+                &-icon {
+                    width: 16px;
+                    height: 16px;
+                    margin: 8px -2px 8px 14px;
+                }
+                &-label {
+                    font-size: 14pt;
+                    margin: 11px;
+                }
+            }
+
+            &-content3 {
+                background: #4d4f50;
+                background-color: white;
+                border-radius: 3px;
+                border: 2px solid;
+                border-color: #4d4f50;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                font-size: 14pt;
+                margin: 0px 20px;
+                height: 34px;
+                min-width: 166px;
+
+                &:hover {
+                    filter: invert(1);
+                    background-color: #b2b0af;
+                    border-color: #b2b0af;
+                    color: black;
+                }
+
+                &-icon {
+                    width: 16px;
+                    height: 16px;
+                    margin: 8px -2px 8px 14px;
+                }
+                &-label {
+                    font-size: 14pt;
+                    margin: 11px;
+                }
+            }
+        }
+        &-button {
+            width: 189px;
+            height: 70px;
+            background: white;
+            background-color: #00ccf5;
+            border-radius: 7px;
+            border-color: #00CCF5;
+            border: unset;
+            box-shadow: 0px 4px #309dbc;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 30px 30px 46px 38px;
+
+            &:hover {
+                background-color: #00bde3;
+                cursor: pointer;
+            }
+
+            &:active {
+                border: none;
+                background-color: #00ccf5 ;
+                box-shadow: 0px -3px 0px 0px #309dbc ;
+            }
+
+            &-font {
+                font-size: 22pt;
+                color: white;
+                margin: 24px 38px 22px 0px;
+            }
+
+            &-icon {
+                width: 27px;
+                height: 18px;
+                fill: white;              
+                filter: brightness(0) invert(1);
+                margin: 24px 17px 22px 24px;
             }
         }
 
@@ -95,12 +233,16 @@
                 margin-left: 20px;
                 text-decoration: underline;
 
+                &:hover {
+                    cursor: pointer;
+                }
+
                 &-icon {
                     width: 34px;
                     height: 23px;
                     margin-top: 8px;
                     margin-left: 10px;
-                    fill: white;
+                    filter: brightness(0) invert(1);
                 }
             }
         }

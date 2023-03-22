@@ -1,7 +1,15 @@
 @import "../variables.scss";
+@import "../responsive.scss";
 
 .small-slidebar {
     max-width: 694px;
+    margin: 0 20px;
+    display: flex;
+
+    @include responsive (laptop) {
+        display: none;
+    }
+
     
     &-slides {
         width: 100%;

@@ -1,0 +1,50 @@
+@import "../variables.scss";
+@import "../responsive.scss";
+
+.state {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px 50px;
+
+    &-transfer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        margin: 20px;
+
+        &-header {
+            display: flex;
+            align-items: center;
+
+            &-dot {
+                width: 43px;
+                height: 43px;
+                margin: 12px 20px;
+            }
+    
+            &-number {
+                color: #424242;
+                font-size: 48pt;
+                font-weight: bold;
+            }
+
+            &-numberdot {
+                color: #33d751;
+                font-size: 48pt;
+                font-weight: bold;
+            }
+        }
+
+        &-context {
+            &-text {
+                font-size: 26pt;
+                color: #424242;
+                text-align: center;
+            }
+        }
+    }
+}

@@ -23,9 +23,9 @@
         &-prev, &-next {
             cursor: pointer;
             position: absolute;
-            top: 85%;
+
             width: auto;
-            margin-top: 5px;
+            margin: -50px 20px;
             padding: 10px;
             color: black;
             font-weight: bold;
@@ -33,10 +33,6 @@
             transition: 0.6s ease;
             border-radius: 0 3px 3px 0;
             user-select: none;
-        }
-    
-        &-prev:hover, &-next:hover {
-            background-color: rgba(0, 0, 0, 0.8);
         }
     
         &-next {
@@ -72,10 +68,9 @@
         flex-direction: column;
     
         &-box {
-            width: 295.03px;
-            height: 214.53px;
-            margin-left: 45px;
             margin-top: 20px;
+            justify-content: center;
+            display: flex;
         }
     
         &-link {

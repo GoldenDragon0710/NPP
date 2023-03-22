@@ -1,0 +1,38 @@
+@mixin responsive( $breakpoint ) {
+    /*
+        breakpoints are viewport arbitrary values,
+        they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+        the breakpoints I used were inspired by Bootstrap =>
+        https://getbootstrap.com/docs/5.0/layout/breakpoints/
+    */
+    @if $breakpoint == smart-mobile {
+        @media only screen and ( max-width: 374.98px ) {
+            @content;
+        }
+    }
+    @if $breakpoint == mobile {
+        @media only screen and ( min-width: 374.99px ) and ( max-width: 424.98px ) {
+            @content;
+        }
+    }
+    @if $breakpoint == tablet {
+        @media only screen and ( min-width: 424.99px ) and ( max-width: 767.98px ) {
+            @content;
+        }
+    }
+    @if $breakpoint == laptop {
+        @media only screen and ( min-width: 767.99px ) and ( max-width: 1023.97px ) {
+            @content;
+        }
+    }
+    @if $breakpoint == large-laptop {
+        @media only screen and ( min-width: 1023.98px  ) and ( max-width: 1439.98px ) {
+            @content;
+        }
+    }
+    @if $breakpoint == desktop {
+        @media only screen and ( min-width: 1439.99px ) {
+            @content;
+        }
+    }
+}
