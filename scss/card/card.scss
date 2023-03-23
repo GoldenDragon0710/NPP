@@ -1,0 +1,355 @@
+@import "../variables.scss";
+
+.card {
+    margin-top: 50px;
+    color: #4d4f50;
+    font-family: $NPPfont;
+
+    &-header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        &-title {
+            &-info {
+                font-size: 47px;
+                font-weight: 900;
+            }
+        }
+        &-path {
+            font-size: 20px;
+            
+            & span {
+                cursor: pointer;
+            }
+
+            & img {
+                margin: 0 10px;
+                rotate: 90deg;
+                filter: invert(0.5);
+                width: 15px;
+            }
+        }
+
+        &-help {
+            display: flex;
+            align-items: center;
+
+            & img {
+                width: 15px;
+                margin: 10px;
+                filter: invert(0.5);
+            }
+
+            & span {
+                margin: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &-content {
+        margin-top: 60px;
+        
+        &-left {
+            margin-right: 50px;
+            width: 450px;
+
+            &-owner {
+                width: 100%;
+                font-size: 18px;
+                border: 1px solid #f4f4f6;
+                border-radius: 5px;
+                padding: 50px;
+
+                &-mark {
+                    margin-top: 50px;
+                    height: 50px;
+                }
+
+                &-elements {
+                    margin-top: 30px;
+                    display: flex;
+                    align-items: flex-start;
+
+                    & img {
+                        width: 40px;
+                        margin-right: 10px;
+                    }
+                }
+
+                &-update-period {
+                    display: flex;
+                    padding: 10px 20px;
+                    background-color: #f4f4f6;
+                    width: 100%;
+                    height: 50px;
+                    font-size: 18px;
+                    align-items: center;
+                    margin-top: 30px;
+
+                    & img {
+                        width: 20px;
+                        margin-right: 15px;
+                    }
+                }
+
+                &-update-data {
+                    margin-top: 30px;
+                    display: grid;
+
+                    &-range {
+                        cursor: pointer;
+                        & img {
+                            width: 15px;
+                            margin: -2px 0 0 2px;
+                            rotate: 180deg;
+                            filter: invert(0.5);
+                        }
+                    }
+                }
+
+                &-subscribe {
+                    margin-top: 30px;
+
+                    & button {
+                        width: 200px;
+                        height: 60px;
+                        background-color: #00ccf5;
+                        border-radius: 10px;
+                        border: 0px;
+                        box-shadow: 0 5px #309dbc;
+                        cursor: pointer;
+
+                        &:hover {
+                            box-shadow: 0 -2px #309dbc;
+                        }
+
+                        & img {
+                            rotate: 45deg;
+                            filter: brightness(0) invert(1);
+                            margin-right: 20px;
+                        }
+
+                        & span {
+                            font-size: 23px;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-back {
+            margin-top: 50px;
+            width: 100%;
+            height: 115px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            padding: 0 30px;
+            color: white;
+            background-image: url(assets/img/card-back.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            &-content {
+                font-size: 20px;
+                cursor: pointer;
+                & img {
+                    rotate: 180deg;
+                    filter: brightness(0) invert(1);
+                    width: 23px;
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        &-detail {
+            margin-bottom: 50px;
+            &-tab {
+                &-tabbutton {
+                    overflow: hidden;
+                    border: 1px solid #f4f4f6;
+                    & button {
+                        background-color: inherit;
+                        float: left;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                        padding: 40px 50px;
+                        transition: 0.3s;
+                        font-size: 17px;
+                        display: flex;
+                        align-items: center;
+        
+                        &:hover {
+                            background-color: #ddd;
+                        }
+            
+                        &.active {
+                            background-color: #ccc;
+                        }
+        
+                        & img {
+                            width: 25px;
+                            height: 22px;
+                            margin-right: 13px;
+                        }
+                    }
+                }
+    
+                &-tabpane {
+                    display: none;
+                    border: 1px solid #f4f4f6;
+                    border-radius: 5px;
+                    border-top: none;
+    
+                    &-header {
+                        padding: 50px 50px;
+                        &-title {
+                            font-size: 20px;
+                            margin: 0;
+                        }
+        
+                        &-description {
+                            font-size: 18px;
+                            margin: 0;
+                        }
+                    }
+    
+                    & img {
+                        width: 100%;
+                        max-height: 310px;
+                    }
+
+                    &-content {
+                        padding: 50px;
+                        display: grid;
+
+                        & span {
+                            font-size: 16px;
+                        }
+
+                        &-format {
+                            display: flex;
+                            height: 50px;
+                            align-items: center;
+                            font-size: 16x;
+
+                            &-label {
+                                font-size: 18px;
+                            }
+
+                            & span {
+                                padding: 0 10px;
+                                margin: 5px;
+                                font-size: 14px;
+                                font-weight: 600;
+                                border: 1px solid black;
+                                border-radius: 5px;
+                                cursor: default;
+                            }
+                        }
+
+                        &-download {
+                            margin: 20px;
+                            &-item {
+                                margin: 5px;
+                                & span {
+                                    margin: 5px;
+                                }
+                                & img {
+                                    margin-right: 5px;
+                                    width: 14px;
+                                    filter: invert(77%) sepia(91%) saturate(1896%) hue-rotate(164deg) brightness(99%) contrast(101%);
+                                    cursor: pointer;
+                                }
+                                &-filename {
+                                    color: #44daf8;
+                                    cursor: pointer;
+                                }
+                                &-date {
+                                    color: #e7eaeb;
+                                }
+                            }
+                        }
+
+                        &-more {
+                            margin-top: 10px;
+                            cursor: pointer;
+                            & img {
+                                width: 15px;
+                                rotate: 180deg;
+                                margin-top: -6px;
+                                filter: invert(0.5);
+                            }
+                        }
+
+                        &-accordion {
+                            margin: 30px 0;
+
+                            &-title {
+                                margin-top: 10px;
+                                display: flex;
+                                width: 100%;
+                                height: 50px;
+                                border-radius: 5px;
+                                justify-content: center;
+                                align-items: center;
+                                cursor: pointer;
+                                background-color: #f4f4f6;
+                                transition: 0.4s;
+                                & img {
+                                    width: 20px;
+                                    margin-right: 15px;
+                                    filter: invert(0.8);
+                                }
+                                & span {
+                                    font-size: 18px;
+                                    font-weight: 600;
+                                }
+                            }
+
+                            &-description {
+                                margin: 30px 0;
+                                max-height: 0;
+                                overflow: hidden;
+                                transition: max-height 0.2s ease-out;
+
+                                &-item {
+                                    margin: 15px 0;
+                                    padding: 0 30px;
+                                    display: flex;
+                                    font-size: 18px;
+                                    &-label {
+                                        border-right: 1px solid #f4f4f6;
+                                        text-align: right;
+                                        width: 50%;
+                                        font-weight: 600;
+                                        padding: 0 30px;
+                                    }
+                                    &-info {
+                                        display: grid;
+                                        width: 50%;
+                                        text-align: left;
+                                        padding: 0 30px;
+                                        border-left: 1px solid #f4f4f6;
+                                        &-cat{
+                                            padding: 5px 20px;
+                                            margin: 5px 0;
+                                            border-radius: 5px;
+                                            text-transform: uppercase;
+                                            background-color: #4d4f50;
+                                            color: white;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

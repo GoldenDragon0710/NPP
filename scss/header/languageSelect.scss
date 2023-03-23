@@ -5,11 +5,13 @@
     border-radius: 4px;
     border: 2px solid rgb(77, 79, 80, 0.2);
     width: 185px;
+    margin: 10px;
 }
 
 .lang-dropdown:active, .lang-dropdown.active{
     outline: 4px solid #33d6f7;
     border-color: #717273;
+    background-color: white;
 }
 .lang-dropdown:hover {
     border-color: #717273;

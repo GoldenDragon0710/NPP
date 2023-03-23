@@ -1,5 +1,9 @@
+.env-container {
+    z-index: 1;
+}
+
 /* Styles for the parent Component */
-.my-dropdown {
+.env-dropdown {
     font-size: 17pt;
     width: 185px;
     font-family: "Myriad Pro";
@@ -7,18 +11,19 @@
     outline: 4px solid transparent;
     border-radius: 4px;
     border: 2px solid rgb(77, 79, 80, 0.2);
+    margin: 10px;
 }
 
-.my-dropdown:active, .my-dropdown.active{
+.env-dropdown:active, .env-dropdown.active{
     outline: 4px solid #33d6f7;
     border-color: #717273;
 }
-.my-dropdown:hover {
+.env-dropdown:hover {
     border-color: #717273;
 }
 
 /* Dropdown button */
-.my-dropdown-btn {
+.env-dropdown-btn {
     display: flex;
     justify-content: space-between;
     background-color: white;
@@ -28,15 +33,15 @@
     min-width: 180px;
     font-size: 17pt;
 }
-.my-dropdown-btn .icon {
+.env-dropdown-btn .icon {
     padding-left: 16px;
     padding-right: 8px;
-    background-image: url(bubble.svg);
+    background-image: url(assets/img/bubble.svg);
     background-repeat: no-repeat;
     background-size: 18px 25px;
     filter: invert(0.4);
 }
-.my-dropdown-btn::after {
+.env-dropdown-btn::after {
     display: inline-block;
     margin-left: .255em;
     vertical-align: .2em;
@@ -49,49 +54,50 @@
 }
 
 /* Toggle button text between title and value */
-.my-dropdown span.my-dropdown-value {
+.env-dropdown span.env-dropdown-value {
     display: inline;
 }
-.my-dropdown span.my-dropdown-label {
+.env-dropdown span.env-dropdown-label {
     color: #bababa;
     display: none;
     font-size: 17pt;
 }
-.my-dropdown.active span.my-dropdown-value {
+.env-dropdown.active span.env-dropdown-value {
     display: none;
 }
-.my-dropdown.active span.my-dropdown-label {
+.env-dropdown.active span.env-dropdown-label {
     display: inline;
 }
 
 /* Dropdown menu */
-.my-dropdown ul {
+.env-dropdown ul {
     display: none;
 }
-.my-dropdown.active ul{
+.env-dropdown.active ul{
     display: block;
 }
 
-.my-dropdown-menu {
+.env-dropdown-menu {
     margin: 0;
     padding: 0;
 }
 
 /* Dropdown meun item */
-.my-dropdown-menu li {
+.env-dropdown-menu li {
     border-top: 2px solid #f4f4f6;
     padding: 7px 7px 7px 30px;
-    font-size: 17pt;    
+    font-size: 17pt;
     cursor: default;
     list-style: none;
     color: #717273;
+    background-color: white;
 }
 
-.my-dropdown-menu li:hover {
+.env-dropdown-menu li:hover {
     background-color: #f4f4f6;
 }
 
-.icon1 {
+.env-icon1 {
     width: 16px;
     height: 14px;
     margin-left: 70px;

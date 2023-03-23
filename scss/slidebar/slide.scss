@@ -1,4 +1,5 @@
 @import "../variables.scss";
+@import "../responsive.scss";
 
 .slidebar {
     display: flex;
@@ -10,6 +11,11 @@
         max-height: 476px;
         margin-right: 35px;
         position: relative;
+
+        @media (width < 1024px) {
+            margin: 0 50px;
+            width: 100%;
+        }
     
         &-slides {
             display: none;
@@ -62,15 +68,27 @@
     }
     &-map-container {
         width: 394px;
-        height: 476px;
+        max-height: 476px;
         background-color: $white-color;
         display: flex;
         flex-direction: column;
+
+        @include responsive(laptop-large) {
+            width: 300px;
+        }
+
+        @media (width < 1024px) {
+            display: none;
+        }
     
         &-box {
             margin-top: 20px;
             justify-content: center;
             display: flex;
+
+            & img {
+                width: 200px;
+            }
         }
     
         &-link {
@@ -80,8 +98,12 @@
             margin-left: 20px;
     
             &-text {
-                font-size: 25pt;
+                font-size: 25px;
                 color: $font-color;
+
+                @include responsive(laptop-large) {
+                    font-size: 20px;
+                }
             }
     
             &-icon {

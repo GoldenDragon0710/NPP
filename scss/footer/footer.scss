@@ -3,26 +3,44 @@
 
 .footer-middle-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    // flex-wrap: wrap;
     padding: 0 50px;
     background: url(assets/img/footer-back.png);
     background-size: cover;
     height: 209px;
 
+    &-menu {
+        display: flex;
+        flex-direction: row;
+
+        @media (width < 1392px) {
+            flex-direction: column;
+        }
+    }
+
     &-menus {
         display: flex;
         align-items: center;
+        justify-content: center;
         &-icon {
-
+            @media (width < 648px) {
+                width: 25px;
+            }
         }
 
         &-link {
             color: $white-color;
             font-size: 22pt;
             margin-left: 56px;
+            min-width: 265px;
             cursor: pointer;
+
+            @media (width < 648px) {
+                font-size: 11pt;
+                min-width: unset;
+                margin-left: 28px;
+            }
 
             &-icon {
                 width: 15px;
@@ -48,12 +66,22 @@
             margin-right: 40px;
             filter: brightness(0) invert(1);
 
+            @media (width < 425px) {
+                justify-content: center;
+                margin: 20px 0 20px 30px;
+            }
+
             & img {
                 margin: 15px 0;
                 width: 40px;
 
                 &:hover {
                     cursor: pointer;
+                }
+
+                @media (width < 648px) {
+                    width: 20px;
+                    margin-right: 20px;
                 }
             }
         }
@@ -64,6 +92,10 @@
             &-info {
                 font-size: 18pt;
                 color: $white-color;
+
+                @media (width < 648px) {
+                    font-size: 9pt;
+                }
             }
         }
     }
@@ -74,13 +106,19 @@
     background-size: auto;
     background-repeat: no-repeat;
     height: 200px;
+
+    &-image {
+        @media (width < 648px) {            
+            width: 320px;
+        }
+    }
 }
 
 .footer-end {
     background-color: #f4f4f6;
 
     &-font {
-        font-size: 18pt;
+        font-size: 18px;
         font-family: "Montserrat", Semi Bold;
         color: #4d4f50;
         margin: auto;
@@ -88,6 +126,11 @@
         align-items: center;
         display: flex;
         justify-items: center;
-        padding: 50px 280px;
+        padding: 50px 230px;
+
+        @media (width < 648px) {
+            font-size: 9px;
+            padding: 25px 115px;
+        }
     }
 }

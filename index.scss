@@ -8,10 +8,13 @@
 @import "scss/header/select.scss";
 @import "scss/header/languageSelect.scss";
 @import "scss/header/envSelect.scss";
+@import "scss/card/card.scss";
+
 
 body {
     margin: 0;
     max-width: 1460px;
     margin: auto;
-    font-family: 'Montserrat', Semi Bold; 
+    font-family: 'Montserrat', Semi Bold;
+    color: #4d4f50;
 }

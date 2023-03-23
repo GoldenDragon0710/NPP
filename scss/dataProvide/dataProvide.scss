@@ -8,6 +8,10 @@
         font-size: 44pt;
         margin: 100px 50px 50px 50px;
         font-weight: bold;
+        
+        @media (width < 648px) {
+            font-size: 44px;
+        }
     }
 
     &-content {
@@ -32,10 +36,13 @@
                 &-icon {
                     margin: auto;
                 }
+
+
             }
             &-description {
                 font-size: 24pt;
                 height: 150px;
+                margin: 0 20px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
