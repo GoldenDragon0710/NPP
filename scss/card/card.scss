@@ -13,7 +13,8 @@
         &-title {
             &-info {
                 font-size: 47px;
-                font-weight: 900;
+                font-weight: bold;
+                color: #4d4f50;
             }
         }
         &-path {
@@ -27,7 +28,7 @@
                 margin: 0 10px;
                 rotate: 90deg;
                 filter: invert(0.5);
-                width: 15px;
+                width: 9px;
             }
         }
 
@@ -75,6 +76,7 @@
                     & img {
                         width: 40px;
                         margin-right: 10px;
+                        filter: invert(96%) sepia(2%) saturate(11%) hue-rotate(193deg) brightness(90%) contrast(97%);
                     }
                 }
 

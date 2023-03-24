@@ -55,7 +55,20 @@
                 <li>150%</li>
                 <li>200%</li>
                 <li><b>Kontrasts</b></li>
-                <li><img class="env-icon" src="assets/img/env-setting.png" /></li>
+                <li>
+                  <div class="env-dropdown-menu-top">
+                    <button class="label1">
+                      <img class="eye-icon" src="assets/img/eye.svg" />
+                      <img class="tick-icon" src="assets/img/check1.svg" />
+                    </button>
+                    <button class="label2"><img class="eye-icon" src="assets/img/eye.svg" /></button><br>
+                  </div>
+
+                  <div class="env-dropdown-menu-down">
+                    <button class="label3"><img class="eye-icon1" src="assets/img/eye.svg" /></button>
+                    <button class="label2"><img class="eye-icon2" src="assets/img/eye.svg" /></button>
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
@@ -93,7 +106,7 @@
                 <img class="header-setting-down-auth-personal-container2-menu" src="./assets/img/menu1.svg" />
                 <p class="header-setting-down-auth-personal-container2-font">Lietotāja iespējas</p>
               </button>
-              <div id="authmenu" style="display: none;" >
+              <div id="authmenu" style="display: none;">
                 <div class="header-setting-down-auth-personal-container2-menudrop">
                   <button class="header-setting-down-auth-personal-container2-button4" type="button">
                     <img class="header-setting-down-auth-personal-container2-menu" src="./assets/img/wire.svg" />
@@ -175,15 +188,17 @@
             <input type="text" class="navbar-search-input" placeholder="Meklēt" onclick="onsearchbox()">
             <img class="navbar-searchbar-icon" src="assets/img/search.png" />
           </div>
-          <div class="searchbar-box" id="searchbox" style="display: none; margin-top: 168px;" onmouseleave="onsearchbox1()">
+          <div class="searchbar-box" id="searchbox" style="display: none; margin-top: 168px;"
+            onmouseleave="onsearchbox1()">
             <input type="text" class="search-modal-input" placeholder="Ievadiet meklēšanas kritērijus...">
             <img class="navbar-searchbar-icon" src="assets/img/search.png" />
             <div class="radio-container">
               <div>
-                <input class="radio-item" type="radio" checked="checked" value="1"/> <span class="radio-text">Visā platformā</span>
+                <input class="radio-item" type="radio" checked="checked" value="1" /> <span class="radio-text">Visā
+                  platformā</span>
               </div>
               <div>
-                <input class="radio-item" type="radio" value="2"/> <span class="radio-text">Datu katalogā</span>
+                <input class="radio-item" type="radio" value="2" /> <span class="radio-text">Datu katalogā</span>
               </div>
             </div>
 
@@ -215,24 +230,7 @@
       </div>
     </div>
     <div class="slidebar-map-container">
-      <div class="slidebar-map-container-box">
-        <img id="close" src="assets/img/mapbox.png" />
-      </div>
-      <div class="slidebar-map-container-link">
-        <p class="slidebar-map-container-link-text">Interaktīvā karte</p>
-        <img class="slidebar-map-container-link-icon" src="assets/img/next.svg" />
-      </div>
-      <div class="slidebar-map-container-data">
-        <label class="slidebar-map-container-data-button">
-          <span class="slidebar-map-container-data-button-text">Operatīvie dati</span>
-        </label>
-      </div>
-      <div class="slidebar-map-container-realtime">
-        <label class="slidebar-map-container-realtime-button">
-          <img class="slidebar-map-container-realtime-button-icon" id="close" src="assets/img/dot.png" />
-          <p class="slidebar-map-container-realtime-button-text">Reāllaika</p>
-        </label>
-      </div>
+      <img src="assets/img/map.png">
     </div>
   </div>
   <div class="state">
@@ -242,7 +240,7 @@
         <a class="state-transfer-header-numberdot">201</a>
       </div>
       <div class="state-transfer-context">
-        <p class="state-transfer-context-text">ierīces nodod transporta<br />datus reālajā laikā</p>
+        <span class="state-transfer-context-text">ierīces nodod transporta<br />datus reālajā laikā</span>
       </div>
     </div>
     <div class="state-transfer">
@@ -250,7 +248,7 @@
         <a class="state-transfer-header-number">5 100 593</a>
       </div>
       <div class="state-transfer-context">
-        <p class="state-transfer-context-text">datu vienības<br />uzturētas platformā</p>
+        <span class="state-transfer-context-text">datu vienības<br />uzturētas platformā</span>
       </div>
     </div>
     <div class="state-transfer">
@@ -258,7 +256,7 @@
         <a class="state-transfer-header-number">28</a>
       </div>
       <div class="state-transfer-context">
-        <p class="state-transfer-context-text">datu kopas ar API<br />uzturētas platformā</p>
+        <span class="state-transfer-context-text">datu kopas ar API<br />izmantošanas iespējām</span>
       </div>
     </div>
   </div>
@@ -369,14 +367,20 @@
           <img class="data-provide-content-item-title-icon" src="assets/img/lvc-logo.svg">
         </div>
         <div class="data-provide-content-item-description">Latvijas Valsts Ceļi</div>
-        <a>www.lvceli.lv</a>
+        <div class="data-provide-content-item-link">
+          <a>www.lvceli.lv</a>
+          <img src="assets/img/link.svg">
+        </div>
       </div>
       <div class="data-provide-content-item">
         <div class="data-provide-content-item-title">
           <img class="data-provide-content-item-title-icon" src="assets/img/LVGlogo.png">
         </div>
         <div class="data-provide-content-item-description">Latvijas Vides ģeoloģijas un meteoroloģijas centrs</div>
-        <a>videscentrs.lvgmc.lv</a>
+        <div class="data-provide-content-item-link">
+          <a>videscentrs.lvgmc.lv</a>
+          <img src="assets/img/link.svg">
+        </div>
       </div>
       <div class="data-provide-content-item">
         <div class="data-provide-content-item-background">

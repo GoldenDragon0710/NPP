@@ -4,7 +4,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  margin: 20px 10px;
+  margin: 20px 10px 0px 0px;
 
   @media (width < 1024px) {
     margin-top: 100px;;
@@ -33,7 +33,6 @@
   }
 
   &-setting {
-    margin: 10px 70px;
 
     @media (width < 780px) {
       width: 100%;
@@ -51,7 +50,6 @@
     }
 
     &-down {
-      margin-top: 80px;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
@@ -69,32 +67,34 @@
       &-auth-button {
         width: 258px;
         height: 68px;
-        background: $white-color;
-        background-color: $blue-color;
+        background: white;
+        background-color: #00ccf5;
         border-radius: 7px;
-        border-color: $blue-color;
+        border-color: #00ccf5;
         border: unset;
-        box-shadow: 0 4px $blue-color;
+        box-shadow: 0 4px #309dbc;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
 
         &:hover {
-          background-color: $blue-color;
+          background-color: #00bde3;
         }
 
         &:active {
           border: none;
-          background-color: $blue-color ;
-          box-shadow: 0 -3px 0 0 $blue-color ;
+          background-color: #00ccf5;
+          box-shadow: 0 -3px 0 0 #309dbc;
         }
 
         &-icon {
+          width: 22px;
+          height: 12px;
           margin: 22px 17px 18px 19px;
         }
 
         &-text {
-          font-size: 18px;
+          font-size: 24px;
           color: $white-color;
           margin: 22px 23px 18px 0;
         }
@@ -103,6 +103,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        margin-bottom: 23px;
 
         &-text {
           display: flex;
@@ -156,6 +157,18 @@
             justify-content: flex-start;
             align-items: center;
             padding: 9px 19px;
+            
+            &:hover {
+              background-color: #309dbc;
+            }
+
+            &:focus {
+              background-color: #309dbc;
+            }
+
+            &:active {
+              background-color: #309dbc;
+            }
           }
 
           &-button4 {
@@ -171,6 +184,18 @@
             justify-content: flex-start;
             align-items: center;
             padding: 9px 19px;
+
+            &:hover {
+              background-color: #309dbc;
+            }
+
+            &:focus {
+              background-color: #309dbc;
+            }
+
+            &:active {
+              background-color: #309dbc;
+            }
           }
 
           &-button2 {
@@ -277,6 +302,7 @@ nav button {
   font-family: "Euclid Circular A";
   font-size: 20px;
   text-transform: uppercase;
+  text-align: left;
 }
 
 @media (width >= 1024px) {
@@ -317,7 +343,10 @@ nav button {
 }
 
 .navbar-menus-tab-title-arrow-icon {
+  width: 13px;
   rotate: 180deg;
+  margin-left: 8px;
+  margin-bottom: 4px;
 }
 
 .navbar-search-burger {
@@ -357,6 +386,7 @@ body.open .navbar-search-burger {
 @media (width >= 1024px) {
   .navbar-menus-tab-title {
     padding: 0 20px;
+    margin-left: 20px;
   }
 
   .navbar-menus-tab-title > img {
@@ -406,6 +436,7 @@ body.open .navbar-search-burger {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-left: 20px;
 }
 
 .navbar-menus-tab-content {
@@ -421,8 +452,8 @@ body.open .navbar-search-burger {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 20px;
-  font-size: 22px;
+  padding: 0 60px;
+  font-size: 18px;
   height: 100%;
 }
 
@@ -454,7 +485,7 @@ body.open .navbar-search-burger {
     position: absolute;
     top: 72px;
     left: 0;
-    height: 100px;
+    height: 170px;
     margin-bottom: 0;
     place-items: start;
     background: #4d4f50;

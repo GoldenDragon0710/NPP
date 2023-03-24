@@ -8,7 +8,7 @@
         font-size: 44pt;
         margin: 100px 50px 50px 50px;
         font-weight: bold;
-        
+
         @media (width < 648px) {
             font-size: 44px;
         }
@@ -23,7 +23,31 @@
             width: 451px;
             height: 390px;
             margin: 10px;
+            border-radius: 4px;
+            border: 2px solid $white-color;
             text-align: center;
+
+            &-link {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                & img {
+                    width: 15px;
+                    height: 15px;
+                    margin-left: 10px;
+                    filter: invert(41%) sepia(91%) saturate(1896%) hue-rotate(164deg) brightness(99%) contrast(101%);
+                }
+
+                & a {
+                    color: #00a5d6;
+                    font-size: 21px;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
 
             &:hover {
                 outline-color: #00CCF5;
@@ -33,12 +57,12 @@
 
             &-title {
                 margin-top: 76px;
+
                 &-icon {
                     margin: auto;
                 }
-
-
             }
+
             &-description {
                 font-size: 24pt;
                 height: 150px;
@@ -46,21 +70,16 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                line-height: 36px;
             }
 
-            & a {
-                color: #00CCF5;
-                font-size: 21pt;
-                &:hover {
-                    cursor: pointer;
-                }
-            }
+
             &-background {
                 background-image: url("assets/img/link2.png");
                 background-size: cover;
                 height: 100%;
                 position: relative;
-        
+
                 &-text {
                     position: absolute;
                     top: 45%;
@@ -69,12 +88,13 @@
                     color: white;
                     font-size: 30pt;
                     margin-left: 35px;
+                    margin-top: -15px;
                     text-decoration: underline;
 
                     &:hover {
                         cursor: pointer;
                     }
-        
+
                     &-icon {
                         width: 34px;
                         height: 23px;

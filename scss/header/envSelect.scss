@@ -5,7 +5,7 @@
 /* Styles for the parent Component */
 .env-dropdown {
     font-size: 17pt;
-    width: 185px;
+    width: 193px;
     font-family: "Myriad Pro";
     font-size: 17px;
     outline: 4px solid transparent;
@@ -30,7 +30,8 @@
     padding: 8px;
     color: #717273;
     border:none;
-    min-width: 180px;
+    min-width: 189px;
+    height: 49px;
     font-size: 17pt;
 }
 .env-dropdown-btn .icon {
@@ -95,6 +96,84 @@
 
 .env-dropdown-menu li:hover {
     background-color: #f4f4f6;
+}
+
+.label1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 71px;
+    height: 32px;
+    background: #00ccf5;
+    border: none;
+    border-radius: 2px;
+}
+
+.label2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12px;
+    width: 46px;
+    height: 32px;
+    background: black;
+    border: none;
+    border-radius: 2px;
+}
+
+.label3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 32px;
+    background: #f8f047;
+    border: none;
+    border-radius: 2px;
+}
+
+.eye-icon {
+    width: 20px;
+    height: 14px;
+    filter: invert(99%) sepia(10%) saturate(159%) hue-rotate(173deg) brightness(115%) contrast(100%);
+}
+
+.tick-icon {
+    width: 20px;
+    height: 14px;
+    filter: invert(99%) sepia(10%) saturate(159%) hue-rotate(173deg) brightness(115%) contrast(100%);
+}
+
+.eye-icon1 {
+    width: 20px;
+    height: 14px;
+    filter: invert(0%) sepia(100%) saturate(7447%) hue-rotate(72deg) brightness(89%) contrast(97%);
+}
+
+.eye-icon2 {
+    width: 20px;
+    height: 14px;
+    filter: invert(77%) sepia(82%) saturate(353%) hue-rotate(8deg) brightness(104%) contrast(103%);
+}
+
+.env-dropdown-menu-top {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: row;
+}
+
+.env-dropdown-menu-down {
+    display: flex;
+    margin-top: 12px;
+    flex-direction: row;
+    margin-bottom: 12px;
+}
+
+.env-dropdown-menu-sub {
+    display: flex;
+    flex-direction: row;
+    justify-content: unset;
+    align-items: center;
 }
 
 .env-icon1 {

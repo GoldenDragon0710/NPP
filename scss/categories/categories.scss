@@ -29,6 +29,7 @@
             outline-color: #00CCF5;
             outline-style: solid;
             outline-width: 4px;
+            box-shadow: 5px 5px 10px gray;
         }
 
         &-update {
@@ -41,6 +42,7 @@
             margin: 5px 20px 0 36px;
             font-size: 26pt;
             color: #545454;
+            line-height: 36px;
         }
         &-icon {
             width: 81px;
@@ -98,6 +100,7 @@
                 margin: 0px 20px;
                 height: 34px;
                 min-width: 85px;
+                padding: 8px 0px;
 
                 &:hover {
                     filter: invert(1);
@@ -109,7 +112,7 @@
                 &-icon {
                     width: 16px;
                     height: 16px;
-                    margin: 8px -2px 8px 14px;
+                    margin-left: 14px;
                 }
                 &-label {
                     font-size: 14px;
@@ -207,7 +210,7 @@
             }
 
             &-font {
-                font-size: 22pt;
+                font-size: 22px;
                 color: white;
                 margin: 24px 38px 22px 0px;
             }
@@ -217,7 +220,7 @@
                 height: 18px;
                 fill: white;              
                 filter: brightness(0) invert(1);
-                margin: 24px 17px 22px 24px;
+                margin: 24px 17px 22px 35px;
             }
         }
 

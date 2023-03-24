@@ -3,7 +3,9 @@
 
 .small-slidebar {
     max-width: 694px;
-    margin: 0 20px;
+    width: 575px;
+    height: 156px;
+    margin: 7px 68px 56px 69px;
     display: flex;
 
     @media (width < 1421px) {

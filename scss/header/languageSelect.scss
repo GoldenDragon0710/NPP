@@ -1,10 +1,12 @@
 /* Styles for the parent Component */
+@import "../variables.scss";
+
 .lang-dropdown {
-    font-family: "Myriad Pro";
+    font-family: $NPPfont;
     outline: 4px solid transparent;
     border-radius: 4px;
     border: 2px solid rgb(77, 79, 80, 0.2);
-    width: 185px;
+    width: 193px;
     margin: 10px;
 }
 
@@ -26,7 +28,8 @@
     padding: 8px;
     color: #717273;
     border:none;
-    min-width: 180px;
+    min-width: 189px;
+    height: 49px;
 }
 .lang-dropdown-btn .icon {
     padding-left: 16px;
@@ -85,6 +88,7 @@
     cursor: default;
     list-style: none;
     color: #717273;
+    height: 49px;
 }
 
 .lang-dropdown-menu li:hover {

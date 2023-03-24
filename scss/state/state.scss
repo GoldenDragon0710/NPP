@@ -4,7 +4,7 @@
 .state {
     background-color: white;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin: 0px 50px;
 
@@ -28,20 +28,22 @@
     
             &-number {
                 color: #424242;
-                font-size: 48pt;
+                font-size: 48px;
                 font-weight: bold;
             }
 
             &-numberdot {
                 color: #33d751;
-                font-size: 48pt;
+                font-size: 48px;
                 font-weight: bold;
             }
         }
 
         &-context {
             &-text {
-                font-size: 26pt;
+                display: flex;
+                align-items: center;
+                font-size: 26px;
                 color: #424242;
                 text-align: center;
             }
