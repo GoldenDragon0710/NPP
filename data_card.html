@@ -19,105 +19,6 @@
         <img class="small-slidebar-slides" src="assets/img/small-slide2.png">
       </div>
     </div>
-    <div class="header-setting">
-      <div class="header-setting-up">
-        <div class="header-setting-position">
-          <div>
-            <div class="lang-dropdown">
-              <button class="lang-dropdown-btn">
-                <span class="lang-dropdown-value"><i class="icon" aria-hidden="true"></i>Latviski</span>
-                <span class="lang-dropdown-label"><i class="icon" aria-hidden="true"></i>Valoda...</span>
-              </button>
-              <ul class="lang-dropdown-menu">
-                <li>Latviski</li>
-                <li>English</li>
-              </ul>
-            </div>
-          </div>
-          <div class="env-container">
-            <div class="env-dropdown">
-              <button class="env-dropdown-btn">
-                <span class="env-dropdown-value"><i class="icon" aria-hidden="true"></i>Iestatījumi</span>
-                <span class="env-dropdown-label"><i class="icon" aria-hidden="true"></i>Iestatījumi...</span>
-              </button>
-              <ul class="env-dropdown-menu">
-                <li><b>Fonta izmērs</b></li>
-                <li style="
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: unset;
-                    align-items: center;
-              ">100%<img class="env-icon1" src="assets/img/check1.svg"></li>
-                <li>150%</li>
-                <li>200%</li>
-                <li><b>Kontrasts</b></li>
-                <li><img class="env-icon" src="assets/img/env-setting.png" /></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="header-setting-down">
-        <div id="qwe">
-          <button class="header-setting-down-auth-button" type="button" onclick="authclick()">
-            <img class="header-setting-down-auth-button-icon" src="assets/img/key.svg" />
-            <p class="header-setting-down-auth-button-text">Autorizēties</p>
-          </button>
-        </div>
-        <div id="loged" hidden="true">
-          <div class="header-setting-down-auth-personal">
-            <div>
-              <img class="header-setting-down-auth-personal-icon" src="./assets/img/sun.png" />
-            </div>
-            <div class="header-setting-down-auth-personal-container">
-              <span class="header-setting-down-auth-personal-container-font">SVEIKI,</span>
-              <span class="header-setting-down-auth-personal-container-font1">Roberts!</span>
-            </div>
-            <div class="header-setting-down-auth-personal-container1">
-              <div>
-                <img class="header-setting-down-auth-personal-icon1" src="./assets/img/mail.svg" />
-                <span class="header-setting-down-auth-personal-container1-font">Nav</span>
-              </div>
-              <div>
-                <span class="header-setting-down-auth-personal-container1-font1">jaunu ziņu</span>
-              </div>
-            </div>
-          </div>
-          <div class="header-setting-down-auth-personal-container2">
-            <div class="header-setting-down-auth-personal-container3">
-              <button class="header-setting-down-auth-personal-container2-button" type="button" onclick="menuclick()">
-                <img class="header-setting-down-auth-personal-container2-menu" src="./assets/img/menu1.svg" />
-                <p class="header-setting-down-auth-personal-container2-font">Lietotāja iespējas</p>
-              </button>
-              <div id="authmenu" style="display: none;" >
-                <div class="header-setting-down-auth-personal-container2-menudrop">
-                  <button class="header-setting-down-auth-personal-container2-button4" type="button">
-                    <img class="header-setting-down-auth-personal-container2-menu" src="./assets/img/wire.svg" />
-                    <p class="header-setting-down-auth-personal-container2-font">Abonētie dati</p>
-                  </button>
-                  <button class="header-setting-down-auth-personal-container2-button4" type="button">
-                    <img class="header-setting-down-auth-personal-container2-menu" src="./assets/img/mail1.svg" />
-                    <p class="header-setting-down-auth-personal-container2-font">Ziņojumi</p>
-                  </button>
-                  <button class="header-setting-down-auth-personal-container2-button4" type="button">
-                    <img class="header-setting-down-auth-personal-container2-menu" src="./assets/img/dev.svg" />
-                    <p class="header-setting-down-auth-personal-container2-font">Dokumentācija</p>
-                  </button>
-                  <button class="header-setting-down-auth-personal-container2-button3" type="button">
-                    <img class="header-setting-down-auth-personal-container2-menu" src="./assets/img/user.svg" />
-                    <p class="header-setting-down-auth-personal-container2-font">Mans profils</p>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <button class="header-setting-down-auth-personal-container2-button2" type="button" onclick="exitclick()">
-              <p class="header-setting-down-auth-personal-container2-font2">Iziet</p>
-              <img class="header-setting-down-auth-personal-container2-cancel" src="./assets/img/Cancel.svg" />
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
   <nav class="navbar">
     <div class="navbar-container">
@@ -165,30 +66,6 @@
           </div>
         </div>
       </div>
-      <div class="navbar-searchbar">
-        <div class="navbar-search-input">
-          <div id="searchbox1">
-            <input type="text" class="navbar-search-input" placeholder="Meklēt" onclick="onsearchbox()">
-            <img class="navbar-searchbar-icon" src="assets/img/search.png" />
-          </div>
-          <div class="searchbar-box" id="searchbox" style="display: none; margin-top: 168px;" onmouseleave="onsearchbox1()">
-            <input type="text" class="search-modal-input" placeholder="Ievadiet meklēšanas kritērijus...">
-            <img class="navbar-searchbar-icon" src="assets/img/search.png" />
-            <div class="radio-container">
-              <div>
-                <input class="radio-item" type="radio" checked="checked" value="1"/> <span class="radio-text">Visā platformā</span>
-              </div>
-              <div>
-                <input class="radio-item" type="radio" value="2"/> <span class="radio-text">Datu katalogā</span>
-              </div>
-            </div>
-
-            <button onclick="" class="search-modal-button ">Meklēt</button>
-          </div>
-
-        </div>
-        <button onclick="toggleMenu()" class="navbar-search-burger"></button>
-      </div>
     </div>
   </nav>
   <div class="card">
@@ -225,7 +102,7 @@
           </div>
           <div class="card-content-left-owner-update-period">
             <img src="assets/img/refresh.svg">
-            <span>Atjaunojas: ~</span>&nbsp;
+            <div class="card-content-left-owner-update-period-label"><span>Atjaunojas: ~</span></div>&nbsp;
             <span><b>reizi 6 mēnešos</b></span>
           </div>
           <div class="card-content-left-owner-update-data">

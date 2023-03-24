@@ -1,4 +1,5 @@
 @import "../variables.scss";
+@import "../responsive.scss";
 
 .card {
     margin-top: 50px;
@@ -9,12 +10,24 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+
+        @include responsive(large-laptop) {
+            padding: 30px;
+        }
+
+        @media (width < 1024px) {
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+        }
 
         &-title {
             &-info {
                 font-size: 47px;
                 font-weight: bold;
                 color: #4d4f50;
+                text-align: center;
             }
         }
         &-path {
@@ -35,6 +48,7 @@
         &-help {
             display: flex;
             align-items: center;
+            width: 250px;
 
             & img {
                 width: 15px;
@@ -98,7 +112,6 @@
 
                 &-update-data {
                     margin-top: 30px;
-                    display: grid;
 
                     &-range {
                         cursor: pointer;
@@ -227,7 +240,7 @@
 
                     &-content {
                         padding: 50px;
-                        display: grid;
+
 
                         & span {
                             font-size: 16px;
@@ -332,7 +345,7 @@
                                         padding: 0 30px;
                                     }
                                     &-info {
-                                        display: grid;
+
                                         width: 50%;
                                         text-align: left;
                                         padding: 0 30px;
