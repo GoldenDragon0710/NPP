@@ -2,4 +2,4 @@
 
 ## Screen Shots
 
-[![SB Admin Preview](https://github.com/goldendragon7/NPP/assets/screenshots/NPP_screenshot1.jpg)]
+[![NPP Preview](https://github.com/GoldenDragon7/NPP/tree/main/assets/screenshots/NPP_screenshot1.jpg)](https://github.com/GoldenDragon7/NPP/tree/main/assets/screenshots/)
