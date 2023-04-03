@@ -1,0 +1,490 @@
+.card {
+  margin-top: 50px;
+  color: #4d4f50;
+  font-size: 19px;
+  font-family: "Montserrat", Semi Bold;
+}
+.card-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card-header-title-info {
+  font-size: 47px;
+  font-weight: 600;
+  color: #4d4f50;
+  text-align: center;
+}
+.card-header-path {
+  font-size: 19px;
+  text-transform: uppercase;
+}
+.card-header-path span {
+  cursor: pointer;
+}
+.card-header-path img {
+  margin: 0 10px;
+  rotate: 90deg;
+  filter: invert(28%) sepia(7%) saturate(147%) hue-rotate(155deg) brightness(98%) contrast(88%);
+  width: 9px;
+}
+.card-header-help {
+  display: flex;
+  align-items: center;
+  width: 280px;
+  color: rgba(128, 128, 128, 0.4588235294);
+}
+@media (width < 1024px) {
+  .card-header-help {
+    display: none;
+  }
+}
+.card-header-help img {
+  width: 18px;
+  margin: 10px;
+  filter: brightness(0.8) invert(0.8);
+}
+.card-header-help span {
+  margin: 10px;
+  color: #545454;
+  cursor: pointer;
+}
+.card-header-help span:hover {
+  color: #44daf8;
+}
+.card-content {
+  margin-top: 60px;
+  font-size: 19px;
+  /*
+      breakpoints are viewport arbitrary values,
+      they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+      the breakpoints I used were inspired by Bootstrap =>
+      https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  */
+}
+@media only screen and (min-width: 1023.98px) and (max-width: 1439.98px) {
+  .card-content {
+    padding: 0 30px;
+  }
+}
+@media (width < 1024px) {
+  .card-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 30px;
+  }
+}
+.card-content-left {
+  margin-right: 50px;
+  width: 450px;
+}
+@media (width < 1024px) {
+  .card-content-left {
+    margin-right: unset;
+  }
+}
+@media (width < 375px) {
+  .card-content-left {
+    width: 300px;
+  }
+}
+.card-content-left-owner {
+  width: 100%;
+  font-size: 19px;
+  border: 1px solid #f4f4f6;
+  border-radius: 5px;
+  padding: 40px;
+}
+@media (width < 768px) {
+  .card-content-left-owner {
+    padding: 20px;
+  }
+}
+.card-content-left-owner-mark {
+  margin-top: 50px;
+  height: 50px;
+}
+.card-content-left-owner-elements {
+  margin-top: 30px;
+  display: flex;
+  align-items: flex-start;
+}
+.card-content-left-owner-elements img {
+  width: 40px;
+  margin-right: 10px;
+  filter: invert(25%) sepia(2%) saturate(11%) hue-rotate(193deg) brightness(90%) contrast(97%);
+}
+.card-content-left-owner-update-period {
+  display: flex;
+  padding: 10px 20px;
+  background-color: #f4f4f6;
+  width: 100%;
+  height: 50px;
+  font-size: 19px;
+  align-items: center;
+  margin-top: 30px;
+}
+.card-content-left-owner-update-period img {
+  width: 20px;
+  margin-right: 15px;
+}
+.card-content-left-owner-update-period-label {
+  min-width: 122px;
+}
+.card-content-left-owner-update-data {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.card-content-left-owner-update-data-range {
+  cursor: pointer;
+}
+.card-content-left-owner-update-data-range img {
+  width: 10px;
+  margin: -2px 0 0 2px;
+  rotate: 180deg;
+  filter: invert(28%) sepia(7%) saturate(147%) hue-rotate(155deg) brightness(98%) contrast(88%);
+}
+.card-content-left-owner-subscribe {
+  margin-top: 30px;
+}
+.card-content-left-owner-subscribe button {
+  width: 200px;
+  height: 60px;
+  background-color: #00ccf5;
+  border-radius: 10px;
+  border: 0px;
+  box-shadow: 0 5px #309dbc;
+  cursor: pointer;
+}
+.card-content-left-owner-subscribe button:hover {
+  background-color: #02badf;
+}
+.card-content-left-owner-subscribe button:active {
+  box-shadow: 0 -3px #309dbc;
+}
+.card-content-left-owner-subscribe button img {
+  rotate: 45deg;
+  filter: brightness(0) invert(1);
+  margin-right: 20px;
+}
+.card-content-left-owner-subscribe button span {
+  font-size: 23px;
+  color: white;
+}
+.card-content-back {
+  margin-top: 50px;
+  width: 100%;
+  height: 115px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  color: white;
+  cursor: pointer;
+  border: 2px solid white;
+  background-image: url(assets/img/card-back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (width < 1024px) {
+  .card-content-back {
+    margin-bottom: 50px;
+  }
+}
+.card-content-back:hover {
+  outline: 2px solid #44daf8;
+}
+.card-content-back-content {
+  font-size: 22px;
+}
+.card-content-back-content img {
+  rotate: 180deg;
+  filter: brightness(0) invert(1);
+  width: 23px;
+  margin-right: 10px;
+}
+.card-content-detail {
+  margin-bottom: 50px;
+}
+.card-content-detail-tab-tabbutton {
+  overflow: hidden;
+  border: 1px solid #f4f4f6;
+  border-radius: 5px 5px 0 0;
+}
+.card-content-detail-tab-tabbutton button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 40px 50px;
+  transition: 0.3s;
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  /*
+      breakpoints are viewport arbitrary values,
+      they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+      the breakpoints I used were inspired by Bootstrap =>
+      https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  */
+}
+@media only screen and (min-width: 1023.98px) and (max-width: 1439.98px) {
+  .card-content-detail-tab-tabbutton button {
+    padding: 20px;
+  }
+}
+@media (width < 768px) {
+  .card-content-detail-tab-tabbutton button {
+    padding: 20px;
+  }
+}
+.card-content-detail-tab-tabbutton button:hover, .card-content-detail-tab-tabbutton button.active {
+  background-color: #f4f4f6;
+}
+.card-content-detail-tab-tabbutton button img {
+  width: 25px;
+  height: 22px;
+  margin-right: 13px;
+}
+.card-content-detail-tab-tabpane {
+  display: none;
+  border: 1px solid #f4f4f6;
+  border-radius: 0 0 5px 5px;
+  border-top: none;
+}
+.card-content-detail-tab-tabpane-header {
+  padding: 40px;
+}
+@media (width < 768px) {
+  .card-content-detail-tab-tabpane-header {
+    padding: 20px;
+  }
+}
+.card-content-detail-tab-tabpane-header-title {
+  font-size: 26px;
+  margin: 0;
+}
+.card-content-detail-tab-tabpane-header-description {
+  font-size: 19px;
+  margin: 0;
+}
+.card-content-detail-tab-tabpane img {
+  width: 100%;
+  max-height: 310px;
+}
+.card-content-detail-tab-tabpane-content {
+  padding: 40px;
+  display: flex;
+  font-size: 19px;
+  flex-direction: column;
+}
+@media (width < 768px) {
+  .card-content-detail-tab-tabpane-content {
+    padding: 20px;
+  }
+}
+.card-content-detail-tab-tabpane-content span {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.card-content-detail-tab-tabpane-content-format {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  font-size: 16x;
+}
+.card-content-detail-tab-tabpane-content-format-label {
+  font-size: 19px;
+}
+.card-content-detail-tab-tabpane-content-format-csv, .card-content-detail-tab-tabpane-content-format-json {
+  height: 30px;
+  padding: 5px 10px;
+  margin: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid #4d4f50;
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #4d4f50;
+  cursor: default;
+}
+.card-content-detail-tab-tabpane-content-format-csv:hover, .card-content-detail-tab-tabpane-content-format-json:hover {
+  color: white;
+  background-color: #4d4f50;
+}
+.card-content-detail-tab-tabpane-content-download {
+  margin: 20px 0;
+}
+.card-content-detail-tab-tabpane-content-download-item {
+  margin: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-content-detail-tab-tabpane-content-download-item span {
+  margin: 0 10px;
+}
+.card-content-detail-tab-tabpane-content-download-item img {
+  width: 15px;
+  filter: invert(77%) sepia(91%) saturate(1896%) hue-rotate(164deg) brightness(99%) contrast(101%);
+  cursor: pointer;
+}
+.card-content-detail-tab-tabpane-content-download-item-filename {
+  color: #44daf8;
+  cursor: pointer;
+}
+.card-content-detail-tab-tabpane-content-download-item-date {
+  color: #e7eaeb;
+}
+.card-content-detail-tab-tabpane-content-more {
+  margin-top: 10px;
+  cursor: pointer;
+}
+.card-content-detail-tab-tabpane-content-more img {
+  width: 9px;
+  rotate: 180deg;
+  margin-top: -6px;
+  filter: invert(28%) sepia(7%) saturate(147%) hue-rotate(155deg) brightness(98%) contrast(88%);
+  margin-left: 5px;
+}
+.card-content-detail-tab-tabpane-content-accordion {
+  margin: 30px 0;
+}
+.card-content-detail-tab-tabpane-content-accordion-title {
+  margin-top: 10px;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #f4f4f6;
+  transition: 0.4s;
+}
+.card-content-detail-tab-tabpane-content-accordion-title img {
+  width: 20px;
+  margin-right: 15px;
+  filter: invert(0.8);
+}
+.card-content-detail-tab-tabpane-content-accordion-title span {
+  font-size: 19px;
+  font-weight: 600;
+}
+.card-content-detail-tab-tabpane-content-accordion-description {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.card-content-detail-tab-tabpane-content-accordion-description-grid {
+  display: none;
+}
+@media (width < 768px) {
+  .card-content-detail-tab-tabpane-content-accordion-description-grid {
+    display: block;
+  }
+}
+.card-content-detail-tab-tabpane-content-accordion-description table {
+  display: block;
+  width: 100%;
+  font-size: 19px;
+  margin: 15px 0;
+  padding: 0 30px;
+  border-spacing: 0;
+  /*
+      breakpoints are viewport arbitrary values,
+      they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+      the breakpoints I used were inspired by Bootstrap =>
+      https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  */
+}
+@media (width < 768px) {
+  .card-content-detail-tab-tabpane-content-accordion-description table {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1023.98px) and (max-width: 1439.98px) {
+  .card-content-detail-tab-tabpane-content-accordion-description table {
+    padding: unset;
+    font-size: 16px;
+  }
+}
+.card-content-detail-tab-tabpane-content-accordion-description-label {
+  text-align: right;
+  font-weight: 600;
+  padding: 0 30px 20px 0;
+  border-right: 1px solid #f4f4f6;
+  vertical-align: initial;
+}
+.card-content-detail-tab-tabpane-content-accordion-description-info {
+  text-align: left;
+  padding: 0 0 20px 30px;
+  font-weight: unset;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #f4f4f6;
+  vertical-align: initial;
+}
+.card-content-detail-tab-tabpane-content-accordion-description-info-cat {
+  padding: 5px 20px;
+  margin: 5px 0;
+  font-size: 16px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  background-color: #4d4f50;
+  color: white;
+}
+.card-content-detail-tab-tabpane-content-accordion-description-item {
+  margin: 15px 0;
+  padding: 0 30px;
+  display: flex;
+  font-size: 18px;
+  flex-direction: column;
+}
+@media (width < 375px) {
+  .card-content-detail-tab-tabpane-content-accordion-description-item {
+    padding: 0 10px;
+    font-size: 16px;
+  }
+}
+.card-content-detail-tab-tabpane-content-accordion-description-item-label {
+  font-weight: 600;
+}
+.card-content-detail-tab-tabpane-content-accordion-description-item-info {
+  text-align: left;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+}
+@media (width < 375px) {
+  .card-content-detail-tab-tabpane-content-accordion-description-item-info {
+    padding: 0 10px;
+  }
+}
+.card-content-detail-tab-tabpane-content-accordion-description-item-info-cat {
+  padding: 5px 20px;
+  margin: 5px 0;
+  border-radius: 5px;
+  text-transform: uppercase;
+  background-color: #4d4f50;
+  color: white;
+}
+
+.menu-item.active .accordion-open-icon-plus {
+  display: block;
+}
+.menu-item.active .accordion-open-icon-minus {
+  display: none;
+}
+
+.menu-item .accordion-open-icon-plus {
+  display: none;
+}
+.menu-item .accordion-open-icon-minus {
+  display: block;
+}/*# sourceMappingURL=card.css.map */

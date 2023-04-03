@@ -7,12 +7,10 @@ for (i = 0; i < acc.length; i++) {
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
-      panel.style.margin = "unset";
-      document.getElementsByClassName("accordion-open-icon").src = "assets/img/plus.svg";
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
-      panel.style.margin = "30px 0";
-      document.getElementsByClassName("accordion-open-icon").src = "assets/img/minus.svg";
     } 
   });
 }
+
+acc[0].click();

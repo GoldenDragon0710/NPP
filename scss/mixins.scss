@@ -2,8 +2,65 @@
 
 @mixin footer-categories($width) {
     color: $white-color;
-    font-size: 20pt;
+    font-size: 20px;
     margin-left: 45px;
     cursor: pointer;
     width: $width;
+}
+
+@mixin register-button-type($width, $height, $fontSize) {
+    width: $width;
+    height: $height;
+    font-size: $fontSize;
+    color: white;
+    background-color: #00ccf5;
+    border: unset;
+    border-radius: 10px;
+    box-shadow: 0 5px #309dbc;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #00bde3;
+    }
+
+    &:active {
+        border: none;
+        background-color: #00ccf5;
+        box-shadow: 0 -3px 0 0 #309dbc;
+    }
+}
+
+@mixin checkbox($width, $height, $fontSize) {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0px;
+    align-items: center;
+    color: #b5b5b5;
+
+    &-icon {
+        width: $width;
+        height: $height;
+        padding: 2px;
+        border-inline: unset;
+        border-radius: 2px;
+        border: 2px solid #dbdcdc;
+        margin-right: 13px;
+        content-visibility: hidden;
+
+        &:hover {                      
+            outline: 2px solid #ff330a;
+            opacity: 80%;
+        }                    
+    }
+
+    &-text {
+        font-size: $fontSize;
+    } 
+    
+    &:hover {                   
+        border: 0px solid white;
+        color: #b2b0af;
+        opacity: 80%;
+        filter: invert(1);
+    }
 }

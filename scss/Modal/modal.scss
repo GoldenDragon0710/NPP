@@ -1,0 +1,229 @@
+.modal-dialog {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: 1;
+  position: fixed;
+  pointer-events: none;
+  background: rgba(21, 21, 21, 0.699);
+}
+
+.modal-dialog:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-dialog-content {
+  width: 914px;
+  color: black;
+  margin: 10% auto;
+  border-radius: 4px;
+  background: #fff;
+  position: relative;
+  padding: 53px;
+  height: 508px;
+
+  @media (width < 1024px) {
+    width: 700px;
+  }
+
+  @media (width < 768px) {
+    width: 320px;
+    height: 650px;
+  }
+
+  &-sub5 {
+    margin-top: 42px;
+  }
+
+  &-de {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &-sub1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &-icon1 {
+      width: 15px;
+      height: 13px;
+    }
+
+    &-font2 {
+      font-size: 26px;
+      color: #545454;
+      font-weight: bold;
+      margin-left: 25px;
+
+      @media (width < 768px) {
+        font-size: 20px;
+      }
+    }
+  }
+
+  &-sub2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    @media (width < 768px) {
+      flex-direction: column;
+    }
+
+    &-font3 {
+      font-size: 19px;
+      color: #424242;
+
+      @media (width < 768px) {
+        font-size: 15px;
+      }
+
+      &-detail {
+        color: #00ccf5;
+        text-decoration: underline;
+      }
+
+      &-detail:hover {
+        color: #00bde3;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      &-detail2 {
+        width: 442px;
+        height: 52px;
+        background-color: #f4f4f6;
+        margin-left: 25px;
+        padding: 13px 22px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        @media (width < 768px) {
+          &span {
+            font-size: 10px;
+          }
+        }
+
+        @media (width < 768px) {
+          width: 240px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+        }
+
+        &-key {
+          font-size: 19px;
+          color: #4e4e4e;
+
+          @media (width < 768px) {
+            font-size: 10px;
+          }
+        }
+      }
+
+      &-icon {
+        margin-left: 15px;
+        width: 15px;
+        height: 18px;
+        filter: invert(28%) sepia(0%) saturate(749%) hue-rotate(265deg)
+          brightness(96%) contrast(83%);
+
+        @media (width < 768px) {
+          width: 8px;
+          height: 8px;
+        }
+      }
+    }
+  }
+
+  &-font1 {
+    font-size: 35px;
+    color: #4d4f50;
+    font-weight: bold;
+
+    @media (width < 768px) {
+      font-size: 30px;
+    }
+  }
+
+  &-btn {
+    width: 156px;
+    height: 68px;
+    background: white;
+    background-color: #00ccf5;
+    border-radius: 7px;
+    border-color: #00ccf5;
+    border: unset;
+    box-shadow: 0px 4px #309dbc;
+
+    &-font {
+      font-size: 24px;
+      color: white;
+    }
+  }
+
+  &-btn:hover {
+    background-color: #00bde3;
+  }
+
+  &-btn:active {
+    border: none;
+    background-color: #00ccf5;
+    box-shadow: 0px -3px 0px 0px #309dbc;
+  }
+}
+
+/* Clode modal icon */
+.close {
+  color: #000;
+  text-decoration: none;
+
+  &-icon {
+    width: 25px;
+    height: 25px;
+    filter: invert(33%) sepia(7%) saturate(154%) hue-rotate(156deg)
+      brightness(86%) contrast(92%);
+
+    @media (width < 768px) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+.close-modal {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Modal footer buttons */
+.modal-button {
+  border: none;
+  width: 150px;
+  margin: 0 5px;
+  padding: 10px;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.confirm {
+  background-color: #4caf50;
+}
+
+.cancel {
+  background-color: #999;
+}
+
+.modal-dialog-footer {
+  display: flex;
+  justify-content: flex-end;
+}

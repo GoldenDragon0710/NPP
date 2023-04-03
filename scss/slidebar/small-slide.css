@@ -1,0 +1,16 @@
+.small-slidebar {
+  max-width: 694px;
+  width: 575px;
+  height: 129px;
+  margin: 5px 68px 59px 69px;
+  display: flex;
+}
+@media (width < 1451px) {
+  .small-slidebar {
+    display: none;
+  }
+}
+.small-slidebar-slides {
+  min-width: 300px;
+  height: 136px;
+}/*# sourceMappingURL=small-slide.css.map */

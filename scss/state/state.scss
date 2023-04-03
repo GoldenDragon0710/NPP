@@ -8,6 +8,14 @@
     flex-wrap: wrap;
     margin: 0px 50px;
 
+    @media (width < 1223px) {
+        justify-content: center;
+    }
+
+    @media (width < 425px) {
+        margin: 50px 20px 0 20px;
+    }
+
     &-transfer {
         display: flex;
         flex-direction: column;
@@ -15,6 +23,11 @@
         align-items: center;
         padding: 20px;
         margin: 20px;
+
+        @media (width < 425px) {
+            padding: 20px 0;
+            margin: 20px 0;
+        }
 
         &-header {
             display: flex;

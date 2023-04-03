@@ -1,13 +1,14 @@
+@import "../variables.scss";
+
 .env-container {
     z-index: 1;
 }
 
 /* Styles for the parent Component */
 .env-dropdown {
-    font-size: 17pt;
-    width: 193px;
-    font-family: "Myriad Pro";
+    font-family: $NPPfont;
     font-size: 17px;
+    width: 185px;
     outline: 4px solid transparent;
     border-radius: 4px;
     border: 2px solid rgb(77, 79, 80, 0.2);
@@ -30,9 +31,9 @@
     padding: 8px;
     color: #717273;
     border:none;
-    min-width: 189px;
-    height: 49px;
-    font-size: 17pt;
+    min-width: 181px;
+    height: 41px;
+    font-size: 17px;
 }
 .env-dropdown-btn .icon {
     padding-left: 16px;
@@ -61,7 +62,7 @@
 .env-dropdown span.env-dropdown-label {
     color: #bababa;
     display: none;
-    font-size: 17pt;
+    font-size: 17px;
 }
 .env-dropdown.active span.env-dropdown-value {
     display: none;
@@ -87,7 +88,7 @@
 .env-dropdown-menu li {
     border-top: 2px solid #f4f4f6;
     padding: 7px 7px 7px 30px;
-    font-size: 17pt;
+    font-size: 17px;
     cursor: default;
     list-style: none;
     color: #717273;
@@ -106,7 +107,8 @@
     height: 32px;
     background: #00ccf5;
     border: none;
-    border-radius: 2px;
+    border-radius: 2px;    
+    cursor: pointer;
 }
 
 .label2 {
@@ -119,6 +121,7 @@
     background: black;
     border: none;
     border-radius: 2px;
+    cursor: pointer;
 }
 
 .label3 {
@@ -130,6 +133,7 @@
     background: #f8f047;
     border: none;
     border-radius: 2px;
+    cursor: pointer;
 }
 
 .eye-icon {

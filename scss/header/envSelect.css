@@ -1,0 +1,193 @@
+.env-container {
+  z-index: 1;
+}
+
+/* Styles for the parent Component */
+.env-dropdown {
+  font-family: "Montserrat", Semi Bold;
+  font-size: 17px;
+  width: 185px;
+  outline: 4px solid transparent;
+  border-radius: 4px;
+  border: 2px solid rgba(77, 79, 80, 0.2);
+  margin: 10px;
+}
+
+.env-dropdown:active, .env-dropdown.active {
+  outline: 4px solid #33d6f7;
+  border-color: #717273;
+}
+
+.env-dropdown:hover {
+  border-color: #717273;
+}
+
+/* Dropdown button */
+.env-dropdown-btn {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 8px;
+  color: #717273;
+  border: none;
+  min-width: 181px;
+  height: 41px;
+  font-size: 17px;
+}
+
+.env-dropdown-btn .icon {
+  padding-left: 16px;
+  padding-right: 8px;
+  background-image: url(assets/img/bubble.svg);
+  background-repeat: no-repeat;
+  background-size: 18px 25px;
+  filter: invert(0.4);
+}
+
+.env-dropdown-btn::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.2em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+  align-self: center;
+}
+
+/* Toggle button text between title and value */
+.env-dropdown span.env-dropdown-value {
+  display: inline;
+}
+
+.env-dropdown span.env-dropdown-label {
+  color: #bababa;
+  display: none;
+  font-size: 17px;
+}
+
+.env-dropdown.active span.env-dropdown-value {
+  display: none;
+}
+
+.env-dropdown.active span.env-dropdown-label {
+  display: inline;
+}
+
+/* Dropdown menu */
+.env-dropdown ul {
+  display: none;
+}
+
+.env-dropdown.active ul {
+  display: block;
+}
+
+.env-dropdown-menu {
+  margin: 0;
+  padding: 0;
+}
+
+/* Dropdown meun item */
+.env-dropdown-menu li {
+  border-top: 2px solid #f4f4f6;
+  padding: 7px 7px 7px 30px;
+  font-size: 17px;
+  cursor: default;
+  list-style: none;
+  color: #717273;
+  background-color: white;
+}
+
+.env-dropdown-menu li:hover {
+  background-color: #f4f4f6;
+}
+
+.label1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 71px;
+  height: 32px;
+  background: #00ccf5;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.label2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+  width: 46px;
+  height: 32px;
+  background: black;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.label3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 32px;
+  background: #f8f047;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.eye-icon {
+  width: 20px;
+  height: 14px;
+  filter: invert(99%) sepia(10%) saturate(159%) hue-rotate(173deg) brightness(115%) contrast(100%);
+}
+
+.tick-icon {
+  width: 20px;
+  height: 14px;
+  filter: invert(99%) sepia(10%) saturate(159%) hue-rotate(173deg) brightness(115%) contrast(100%);
+}
+
+.eye-icon1 {
+  width: 20px;
+  height: 14px;
+  filter: invert(0%) sepia(100%) saturate(7447%) hue-rotate(72deg) brightness(89%) contrast(97%);
+}
+
+.eye-icon2 {
+  width: 20px;
+  height: 14px;
+  filter: invert(77%) sepia(82%) saturate(353%) hue-rotate(8deg) brightness(104%) contrast(103%);
+}
+
+.env-dropdown-menu-top {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+}
+
+.env-dropdown-menu-down {
+  display: flex;
+  margin-top: 12px;
+  flex-direction: row;
+  margin-bottom: 12px;
+}
+
+.env-dropdown-menu-sub {
+  display: flex;
+  flex-direction: row;
+  justify-content: unset;
+  align-items: center;
+}
+
+.env-icon1 {
+  width: 16px;
+  height: 14px;
+  margin-left: 70px;
+  filter: invert(41%) sepia(91%) saturate(1896%) hue-rotate(164deg) brightness(99%) contrast(101%);
+}/*# sourceMappingURL=envSelect.css.map */

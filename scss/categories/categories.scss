@@ -10,12 +10,27 @@
 
     &-title {
         text-align: center;
-        font-size: 44pt;
+        font-size: 44px;
         margin: 50px;
         font-weight: bold;
 
         @media (width < 648px) {
-            font-size: 44px;
+            font-size: 37px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &-construction1 {
+        width: 447px;
+        border: 2px solid #f4f4f6;
+        border-radius: 4px;
+        margin: 10px;
+
+        &:hover {
+            outline-color: #00CCF5;
+            outline-style: solid;
+            outline-width: 4px;
+            box-shadow: 4px 4px 13px rgba(0, 0, 0, 0.15);
         }
     }
 
@@ -29,18 +44,18 @@
             outline-color: #00CCF5;
             outline-style: solid;
             outline-width: 4px;
-            box-shadow: 5px 5px 10px gray;
+            box-shadow: 4px 4px 13px rgba(0, 0, 0, 0.15);
         }
 
         &-update {
             margin: 38px 0 0 36px;
-            font-size: 16pt;
+            font-size: 16px;
             color: #a4a4a4;
             text-transform: uppercase;
         }
         &-title {
             margin: 5px 20px 0 36px;
-            font-size: 26pt;
+            font-size: 26px;
             color: #545454;
             line-height: 36px;
         }
@@ -48,6 +63,7 @@
             width: 81px;
             height: 72px;
             margin: 30px;
+            filter: invert(0.3);
         }
 
         &-dot {
@@ -61,7 +77,7 @@
             margin: 30px 0 30px 36px;
 
             &-text {
-                font-size: 19pt;
+                font-size: 19px;
                 color: #424242;
             }
 
@@ -74,7 +90,7 @@
                 display: flex;
                 justify-content: space-evenly;
                 align-items: center;
-                font-size: 14pt;
+                font-size: 14px;
                 margin: 0px 20px;
                 height: 34px;
                 min-width: 85px;
@@ -99,13 +115,12 @@
                 font-size: 14px;
                 margin: 0px 20px;
                 height: 34px;
-                min-width: 85px;
                 padding: 8px 0px;
 
                 &:hover {
                     filter: invert(1);
-                    background-color: #b2b0af;
-                    border-color: #b2b0af;
+                    background-color: #a9a6a5;
+                    border-color: #a9a6a5;
                     color: black;
                 }
 
@@ -132,12 +147,11 @@
                 font-size: 14px;
                 margin: 0px 20px;
                 height: 34px;
-                min-width: 175px;
 
                 &:hover {
                     filter: invert(1);
-                    background-color: #b2b0af;
-                    border-color: #b2b0af;
+                    background-color: #a9a6a5;
+                    border-color: #a9a6a5;
                     color: black;
                 }
 
@@ -163,20 +177,20 @@
                 align-items: center;
                 font-size: 14px;
                 margin: 0px 20px;
+                padding: 8px 0px;
                 height: 34px;
-                min-width: 166px;
 
                 &:hover {
-                    filter: invert(1);
-                    background-color: #b2b0af;
-                    border-color: #b2b0af;
+                    filter: brightness(1) invert(1);
+                    background-color: #a9a6a5;
+                    border-color: #a9a6a5;
                     color: black;
                 }
 
                 &-icon {
                     width: 16px;
                     height: 16px;
-                    margin: 8px -2px 8px 14px;
+                    margin-left: 14px;
                 }
                 &-label {
                     font-size: 14px;
@@ -236,7 +250,7 @@
                 display: flex;
                 align-items: center;
                 color: white;
-                font-size: 30pt;
+                font-size: 30px;
                 margin-left: 20px;
                 text-decoration: underline;
 

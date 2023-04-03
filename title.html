@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <title>NPP</title>
+</head>
+
+<body>
+  <div class="header">
+    <div class="header-all-logo">
+      <img src="assets/img/npp_logo.svg" class="header-logo-left" />
+      <div class="small-slidebar w3-content w3-section">
+        <img class="small-slidebar-slides" src="assets/img/small-slide1.png">
+        <img class="small-slidebar-slides" src="assets/img/small-slide2.png">
+      </div>
+    </div>
+    <div class="header-setting">
+      <div class="header-setting-up">
+        <div class="header-setting-position">
+          <div>
+            <div class="lang-dropdown">
+              <button class="lang-dropdown-btn">
+                <span class="lang-dropdown-value"><i class="icon" aria-hidden="true"></i>Latviski</span>
+                <span class="lang-dropdown-label"><i class="icon" aria-hidden="true"></i>Valoda...</span>
+              </button>
+              <ul class="lang-dropdown-menu">
+                <li>Latviski</li>
+                <li>English</li>
+              </ul>
+            </div>
+          </div>
+          <div class="env-container">
+            <div class="env-dropdown">
+              <button class="env-dropdown-btn">
+                <span class="env-dropdown-value"><i class="icon" aria-hidden="true"></i>Iestatījumi</span>
+                <span class="env-dropdown-label"><i class="icon" aria-hidden="true"></i>Iestatījumi...</span>
+              </button>
+              <ul class="env-dropdown-menu">
+                <li><b>Fonta izmērs</b></li>
+                <li style="
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: unset;
+                    align-items: center;
+              ">100%<img class="env-icon1" src="assets/img/check1.svg"></li>
+                <li>150%</li>
+                <li>200%</li>
+                <li><b>Kontrasts</b></li>
+                <li>
+                  <div class="env-dropdown-menu-top">
+                    <button class="label1">
+                      <img class="eye-icon" src="assets/img/eye.svg" />
+                      <img class="tick-icon" src="assets/img/check1.svg" />
+                    </button>
+                    <button class="label2"><img class="eye-icon" src="assets/img/eye.svg" /></button><br>
+                  </div>
+
+                  <div class="env-dropdown-menu-down">
+                    <button class="label3"><img class="eye-icon1" src="assets/img/eye.svg" /></button>
+                    <button class="label2"><img class="eye-icon2" src="assets/img/eye.svg" /></button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-setting-down">
+        <div id="qwe" class="header-setting-down-auth">
+          <button class="header-setting-down-auth-button" type="button" onclick="authclick()">
+            <img class="header-setting-down-auth-button-icon" src="assets/img/key.svg" />
+            <p class="header-setting-down-auth-button-text">Autorizēties</p>
+          </button>
+        </div>
+        <div id="loged" hidden="true" style="margin-right: 50px;">
+          <div class="header-setting-down-auth-personal">
+            <div>
+              <img class="header-setting-down-auth-personal-icon" src="./assets/img/sun.png" />
+            </div>
+            <div class="header-setting-down-auth-personal-container">
+              <span class="header-setting-down-auth-personal-container-font">SVEIKI,</span>
+              <span class="header-setting-down-auth-personal-container-font1">Roberts!</span>
+            </div>
+            <div class="header-setting-down-auth-personal-container1">
+              <div>
+                <img class="header-setting-down-auth-personal-icon1" src="./assets/img/mail.svg" />
+                <span class="header-setting-down-auth-personal-container1-font">Nav</span>
+              </div>
+              <div>
+                <span class="header-setting-down-auth-personal-container1-font1">jaunu ziņu</span>
+              </div>
+            </div>
+          </div>
+          <div class="header-setting-down-auth-personal-container2">
+            <div class="header-setting-down-auth-personal-container3">
+              <button class="header-setting-down-auth-personal-container2-button" type="button" onclick="menuclick()">
+                <img class="header-setting-down-auth-personal-container2-menu" src="./assets/img/menu1.svg" />
+                <p class="header-setting-down-auth-personal-container2-font">Lietotāja iespējas</p>
+              </button>
+              <div id="authmenu" style="display: none;">
+                <div class="header-setting-down-auth-personal-container2-menudrop">
+                  <button class="header-setting-down-auth-personal-container2-button4" type="button">
+                    <img class="header-setting-down-auth-personal-container2-menu" src="./assets/img/wire.svg" />
+                    <p class="header-setting-down-auth-personal-container2-font">Abonētie dati</p>
+                  </button>
+                  <button class="header-setting-down-auth-personal-container2-button4" type="button">
+                    <img class="header-setting-down-auth-personal-container2-menu" src="./assets/img/mail1.svg" />
+                    <p class="header-setting-down-auth-personal-container2-font">Ziņojumi</p>
+                  </button>
+                  <button class="header-setting-down-auth-personal-container2-button4" type="button">
+                    <img class="header-setting-down-auth-personal-container2-menu" src="./assets/img/dev.svg" />
+                    <p class="header-setting-down-auth-personal-container2-font">Dokumentācija</p>
+                  </button>
+                  <button class="header-setting-down-auth-personal-container2-button3" type="button">
+                    <img class="header-setting-down-auth-personal-container2-menu" src="./assets/img/user.svg" />
+                    <p class="header-setting-down-auth-personal-container2-font">Mans profils</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="header-setting-down-auth-personal-container2-button2" type="button" onclick="exitclick()">
+              <p class="header-setting-down-auth-personal-container2-font2">Iziet</p>
+              <img class="header-setting-down-auth-personal-container2-cancel" src="./assets/img/Cancel.svg" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-menus">
+        <button class="navbar-menus-tab-title">
+          <img src="assets/img/home.svg" />
+        </button>
+        <div class="navbar-menus-tab">
+          <button class="navbar-menus-tab-title">
+            Datu servisi
+            <img class="navbar-menus-tab-title-arrow-icon" src="assets/img/arrow.svg" />
+          </button>
+          <div class="navbar-menus-tab-imgs">
+            <button class="navbar-menus-tab-imgs-item">
+              <img class="navbar-menus-tab-imgs-item-icon" src="assets/img/menuitem1.png">
+              DATU KATALOGS
+            </button>
+            <button class="navbar-menus-tab-imgs-item">
+              <img class="navbar-menus-tab-imgs-item-icon" src="assets/img/menuitem2.png">
+              INTERAKTĪVĀ KARTE
+            </button>
+          </div>
+        </div>
+        <div class="navbar-menus-tab">
+          <button class="navbar-menus-tab-title">
+            KARTE
+          </button>
+        </div>
+        <div class="navbar-menus-tab">
+          <button class="navbar-menus-tab-title">
+            Kļūsti par partneri
+          </button>
+        </div>
+        <div class="navbar-menus-tab">
+          <button class="navbar-menus-tab-title">
+            Par platformu
+            <img class="navbar-menus-tab-title-arrow-icon" src="assets/img/arrow.svg" />
+          </button>
+          <div class="navbar-menus-tab-content">
+            <button>PAR NPP PROJEKTU</button>
+            <button>PLATFORMAS STATISTIKA</button>
+            <button>PRIVĀTUMA POLITIKA</button>
+            <button>KONFIDENCIALITĀTE</button>
+            <button>KONTAKTI</button>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-searchbar">
+        <div class="navbar-search-input">
+          <div id="searchbox1">
+            <input type="text" class="navbar-search-input" placeholder="Meklēt" onclick="onsearchbox()">
+            <img class="navbar-searchbar-icon" src="assets/img/search.png" />
+          </div>
+          <div class="searchbar-box" id="searchbox" style="display: none; margin-top: 168px;"
+            onmouseleave="onsearchbox1()">
+            <input type="text" class="search-modal-input" placeholder="Ievadiet meklēšanas kritērijus...">
+            <img class="navbar-searchbar-icon" src="assets/img/search.png" />
+            <div class="radio-container">
+              <div>
+                <input class="radio-item" type="radio" checked="checked" value="1" /> <span class="radio-text">Visā
+                  platformā</span>
+              </div>
+              <div>
+                <input class="radio-item" type="radio" value="2" /> <span class="radio-text">Datu katalogā</span>
+              </div>
+            </div>
+
+            <button onclick="" class="search-modal-button ">Meklēt</button>
+          </div>
+
+        </div>
+        <button onclick="toggleMenu()" class="navbar-search-burger"></button>
+      </div>
+    </div>
+  </nav>
+  <div class="slidebar">
+    <div class="slidebar-slideshow w3-col">
+      <div class="slidebar-slideshow-slides slidebar-slideshow-fade">
+        <img src="assets/img/slide1.png" style="width:100%">
+      </div>
+
+      <div class="slidebar-slideshow-slides slidebar-slideshow-fade">
+        <img src="assets/img/slide2.png" style="width:100%">
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="slidebar-slideshow-prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="slidebar-slideshow-next" onclick="plusSlides(1)">&#10095;</a>
+      <!-- The dots/circles -->
+      <div class="slidebar-slideshow-dots">
+        <span class="slidebar-slideshow-dots-dot" onclick="currentSlide(1)"></span>
+        <span class="slidebar-slideshow-dots-dot" onclick="currentSlide(2)"></span>
+      </div>
+    </div>
+    <div class="slidebar-map-container w3-col">
+      <img src="assets/img/map1.png">
+    </div>
+  </div>
+  <div class="state">
+    <div class="state-transfer">
+      <div class="state-transfer-header">
+        <img class="state-transfer-header-dot" src="./assets/img/state.png" />
+        <a class="state-transfer-header-numberdot">201</a>
+      </div>
+      <div class="state-transfer-context">
+        <span class="state-transfer-context-text">ierīces nodod transporta<br />datus reālajā laikā</span>
+      </div>
+    </div>
+    <div class="state-transfer">
+      <div class="state-transfer-header">
+        <a class="state-transfer-header-number">5 100 593</a>
+      </div>
+      <div class="state-transfer-context">
+        <span class="state-transfer-context-text">datu vienības<br />uzturētas platformā</span>
+      </div>
+    </div>
+    <div class="state-transfer">
+      <div class="state-transfer-header">
+        <a class="state-transfer-header-number">28</a>
+      </div>
+      <div class="state-transfer-context">
+        <span class="state-transfer-context-text">datu kopas ar API<br />izmantošanas iespējām</span>
+      </div>
+    </div>
+  </div>
+  <div class="data-cat">
+    <div class="data-cat-title">
+      Datu kategorijas
+    </div>
+    <div class="data-cat-content">
+
+      <div class="data-cat-construction1" onmouseover="mouseover1()" onmouseleave="mouseleave1()">
+        <div class="data-cat-construction-update">AtjaUnots 15.10.2022.</div>
+        <img class="data-cat-construction-icon" src="assets/img/under-construction.svg">
+        <div class="data-cat-construction-title">Īstermiņa ceļu darbi</div>
+        <div class="data-cat-construction-data">
+          <span class="data-cat-construction-data-text">1 datu kopa</span>
+          <label class="data-cat-construction-data-content1">
+            <img class="data-cat-construction-data-content1-icon" src="assets/img/key2.svg" />
+            <span class="data-cat-construction-data-content1-label">API</span>
+          </label>
+        </div>
+        <div id="button1" hidden="true">
+          <button class="data-cat-construction-button" type="button">
+            <img class="data-cat-construction-button-icon" src="assets/img/next.svg" />
+            <p class="data-cat-construction-button-font">Aplūkot</p>
+          </button>
+        </div>
+      </div>
+      <div class="data-cat-construction1" onmouseover="mouseover2()" onmouseleave="mouseleave2()">
+        <div class="data-cat-construction-update">REĀLLAIKA<img class="data-cat-construction-dot"
+            src="./assets/img/state_small.png" /></div>
+        <img class="data-cat-construction-icon" src="assets/img/road.svg">
+        <div class="data-cat-construction-title">Autoceļu klasifikācija</div>
+        <div class="data-cat-construction-data">
+          <span class="data-cat-construction-data-text">2 datu kopas</span>
+          <label class="data-cat-construction-data-content2">
+            <span class="data-cat-construction-data-content2-label">LONGER TEXT TAG</span>
+          </label>
+        </div>
+        <div id="button2" hidden="true">
+          <button class="data-cat-construction-button" type="button">
+            <img class="data-cat-construction-button-icon" src="assets/img/next.svg" />
+            <p class="data-cat-construction-button-font">Aplūkot</p>
+          </button>
+        </div>
+      </div>
+      <div class="data-cat-construction1" onmouseover="mouseover3()" onmouseleave="mouseleave3()">
+        <div class="data-cat-construction-update">REĀLLAIKA<img class="data-cat-construction-dot"
+            src="./assets/img/state_small.png" /></div>
+        <img class="data-cat-construction-icon" src="assets/img/parking.svg">
+        <div class="data-cat-construction-title">Stāvlaukumi</div>
+        <div class="data-cat-construction-data">
+          <span class="data-cat-construction-data-text">2 datu kopas</span>
+          <label class="data-cat-construction-data-content3">
+            <img class="data-cat-construction-data-content3-icon" src="assets/img/key2.svg" />
+            <span class="data-cat-construction-data-content3-label">HOVER TAG</span>
+          </label>
+        </div>
+        <div id="button3" hidden="true">
+          <button class="data-cat-construction-button" type="button">
+            <img class="data-cat-construction-button-icon" src="assets/img/next.svg" />
+            <p class="data-cat-construction-button-font">Aplūkot</p>
+          </button>
+        </div>
+      </div>
+      <div class="data-cat-construction1" onmouseover="mouseover4()" onmouseleave="mouseleave4()">
+        <div class="data-cat-construction-update">AtjaUnots 05.09.2022.</div>
+        <img class="data-cat-construction-icon" src="assets/img/wild-animals-sign.svg">
+        <div class="data-cat-construction-title">Dzīvnieki, cilvēki, šķēršļi, atkritumi uz ceļa</div>
+        <div class="data-cat-construction-data">
+          <span class="data-cat-construction-data-text">1 datu kopa</span>
+        </div>
+        <div id="button4" hidden="true">
+          <button class="data-cat-construction-button" type="button">
+            <img class="data-cat-construction-button-icon" src="assets/img/next.svg" />
+            <p class="data-cat-construction-button-font">Aplūkot</p>
+          </button>
+        </div>
+      </div>
+      <div class="data-cat-construction1" onmouseover="mouseover5()" onmouseleave="mouseleave5()">
+        <div class="data-cat-construction-update">AtjaUnots 05.09.2022.</div>
+        <img class="data-cat-construction-icon" src="assets/img/streets.svg">
+        <div class="data-cat-construction-title">Statiskie dati par autoceļiem: tīkla posmi un fiziskie raksturl</div>
+        <div class="data-cat-construction-data">
+          <span class="data-cat-construction-data-text">1 datu kopa</span>
+        </div>
+        <div id="button5" hidden="true">
+          <button class="data-cat-construction-button" type="button">
+            <img class="data-cat-construction-button-icon" src="assets/img/next.svg" />
+            <p class="data-cat-construction-button-font">Aplūkot</p>
+          </button>
+        </div>
+      </div>
+      <div class="data-cat-construction">
+        <div class="data-cat-construction-background">
+          <div class="data-cat-construction-background-text">
+            Visas kategorijas
+            <img class="data-cat-construction-background-text-icon" src="assets/img/next.svg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="data-provide">
+    <div class="data-provide-title">Datus sniedz</div>
+    <div class="data-provide-content">
+      <div class="data-provide-content-item1">
+        <div class="data-provide-content-item1-title">
+          <img class="data-provide-content-item1-title-icon" src="assets/img/lvc-logo.svg">
+        </div>
+        <div class="data-provide-content-item1-description">Latvijas Valsts Ceļi</div>
+        <div class="data-provide-content-item1-link">
+          <a>www.lvceli.lv</a>
+          <img src="assets/img/link.svg">
+        </div>
+      </div>
+      <div class="data-provide-content-item1">
+        <div class="data-provide-content-item1-title">
+          <img class="data-provide-content-item1-title-icon" src="assets/img/LVGlogo.png">
+        </div>
+        <div class="data-provide-content-item1-description">Latvijas Vides ģeoloģijas un meteoroloģijas centrs</div>
+        <div class="data-provide-content-item1-link">
+          <a>videscentrs.lvgmc.lv</a>
+          <img src="assets/img/link.svg">
+        </div>
+      </div>
+      <div class="data-provide-content-item">
+        <div class="data-provide-content-item-background">
+          <div class="data-provide-content-item-background-text">
+            Visi datu devēji
+            <img class="data-provide-content-item-background-text-icon" src="assets/img/next.svg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w3-container w3-center w3-margin-top">
+    <img class="footer-up-container-image" src="assets/img/small-slide1.png" />
+  </div>
+  <div class="footer-up-container"></div>
+  <div class="footer-middle-container">
+    <div class="footer-middle-container-menus">
+      <div class="footer-middle-container-menus-cats">
+        <img class="footer-middle-container-menus-icon" src="assets/img/location.png">
+        <div class="footer-middle-container-menu">
+          <div class="footer-middle-container-menus-link">
+            <img class="footer-middle-container-menus-link-icon" src="assets/img/up1.svg">Datu katalogs
+          </div>
+          <div class="footer-middle-container-menus-link">
+            <img class="footer-middle-container-menus-link-icon" src="assets/img/up1.svg">Interaktīvā karte
+          </div>
+          <div class="footer-middle-container-menus-link">
+            <img class="footer-middle-container-menus-link-icon" src="assets/img/up1.svg">Autorizēties
+          </div>
+        </div>
+      </div>
+      <div class="footer-middle-container-social">
+        <div class="footer-middle-container-social-sites">
+          <img src="assets/img/facebook.svg">
+          <img src="assets/img/twitter.svg">
+        </div>
+        <div class="footer-middle-container-social-mail">
+          <div class="footer-middle-container-social-mail-info">
+            <span>npp@npp.gov.lv</span><br />
+            <u>Kontakti</u>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-end">
+    <p class="footer-end-font">2022 © COPYRIGHT LATVIJAS VALSTS CEĻI, NACIONĀLAIS PIEKĻUVES PUNKTS. VISAS TIESĪBAS
+      AIZSARGĀTAS.</p>
+  </div>
+  <script>
+    const toggleMenu = () => document.body.classList.toggle("open");
+  </script>
+  <script src="assets/js/slide.js"></script>
+  <script src="assets/js/language-select.js"></script>
+  <script src="assets/js/setting-select.js"></script>
+  <script src="assets/js/small-slide.js"></script>
+  <script src="assets/js/cat-button.js"></script>
+  <script src="assets/js/auth.js"></script>
+  <script src="assets/js/searchbox.js"></script>
+</body>
+
+</html>

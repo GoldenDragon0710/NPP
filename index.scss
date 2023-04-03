@@ -9,12 +9,23 @@
 @import "scss/header/languageSelect.scss";
 @import "scss/header/envSelect.scss";
 @import "scss/card/card.scss";
+@import "scss/content/content.scss";
+@import "scss/catalog/catalog.scss";
+@import "scss/card/card.scss";
+@import "scss/dashboard/dashboard.scss";
+@import "scss/register/register.scss";
+@import "scss/manaskopas/manaskopas.scss";
+@import "scss/authorizeModal/authorizeModal.scss";
+@import "scss/Modal/modal.scss";
+@import "scss/klusti/klusti.scss";
+@import "scss/palidzibas/palidzibas.scss";
 
 
-body {
+
+body { 
     margin: 0;
-    max-width: 1460px;
+    max-width: 1450px;
     margin: auto;
     font-family: 'Montserrat', Semi Bold;
-    color: gray;
+    color: #545454;
 }

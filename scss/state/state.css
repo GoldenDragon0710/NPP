@@ -1,0 +1,57 @@
+.state {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0px 50px;
+}
+@media (width < 1223px) {
+  .state {
+    justify-content: center;
+  }
+}
+@media (width < 425px) {
+  .state {
+    margin: 50px 20px 0 20px;
+  }
+}
+.state-transfer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+}
+@media (width < 425px) {
+  .state-transfer {
+    padding: 20px 0;
+    margin: 20px 0;
+  }
+}
+.state-transfer-header {
+  display: flex;
+  align-items: center;
+}
+.state-transfer-header-dot {
+  width: 43px;
+  height: 43px;
+  margin: 12px 20px;
+}
+.state-transfer-header-number {
+  color: #424242;
+  font-size: 48px;
+  font-weight: bold;
+}
+.state-transfer-header-numberdot {
+  color: #33d751;
+  font-size: 48px;
+  font-weight: bold;
+}
+.state-transfer-context-text {
+  display: flex;
+  align-items: center;
+  font-size: 26px;
+  color: #424242;
+  text-align: center;
+}/*# sourceMappingURL=state.css.map */

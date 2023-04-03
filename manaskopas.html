@@ -75,13 +75,13 @@
         </div>
       </div>
       <div class="header-setting-down">
-        <div id="qwe">
+        <div id="qwe" class="header-setting-down-auth">
           <button class="header-setting-down-auth-button" type="button" onclick="authclick()">
             <img class="header-setting-down-auth-button-icon" src="assets/img/key.svg" />
             <p class="header-setting-down-auth-button-text">Autorizēties</p>
           </button>
         </div>
-        <div id="loged" hidden="true">
+        <div id="loged" hidden="true" style="margin-right: 50px;">
           <div class="header-setting-down-auth-personal">
             <div>
               <img class="header-setting-down-auth-personal-icon" src="./assets/img/sun.png" />
@@ -210,205 +210,167 @@
       </div>
     </div>
   </nav>
-  <div class="slidebar">
-    <div class="slidebar-slideshow">
-      <div class="slidebar-slideshow-slides slidebar-slideshow-fade">
-        <img src="assets/img/slide1.png" style="width:100%">
-      </div>
 
-      <div class="slidebar-slideshow-slides slidebar-slideshow-fade">
-        <img src="assets/img/slide2.png" style="width:100%">
-      </div>
-
-      <!-- Next and previous buttons -->
-      <a class="slidebar-slideshow-prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="slidebar-slideshow-next" onclick="plusSlides(1)">&#10095;</a>
-      <!-- The dots/circles -->
-      <div class="slidebar-slideshow-dots">
-        <span class="slidebar-slideshow-dots-dot" onclick="currentSlide(1)"></span>
-        <span class="slidebar-slideshow-dots-dot" onclick="currentSlide(2)"></span>
-      </div>
-    </div>
-    <div class="slidebar-map-container">
-      <img src="assets/img/map.png">
-    </div>
-  </div>
-  <div class="state">
-    <div class="state-transfer">
-      <div class="state-transfer-header">
-        <img class="state-transfer-header-dot" src="./assets/img/state.png" />
-        <a class="state-transfer-header-numberdot">201</a>
-      </div>
-      <div class="state-transfer-context">
-        <span class="state-transfer-context-text">ierīces nodod transporta<br />datus reālajā laikā</span>
-      </div>
-    </div>
-    <div class="state-transfer">
-      <div class="state-transfer-header">
-        <a class="state-transfer-header-number">5 100 593</a>
-      </div>
-      <div class="state-transfer-context">
-        <span class="state-transfer-context-text">datu vienības<br />uzturētas platformā</span>
-      </div>
-    </div>
-    <div class="state-transfer">
-      <div class="state-transfer-header">
-        <a class="state-transfer-header-number">28</a>
-      </div>
-      <div class="state-transfer-context">
-        <span class="state-transfer-context-text">datu kopas ar API<br />izmantošanas iespējām</span>
-      </div>
-    </div>
-  </div>
-  <div class="data-cat">
-    <div class="data-cat-title">
-      Datu kategorijas
-    </div>
-    <div class="data-cat-content">
-
-      <div class="data-cat-construction" onmouseover="mouseover1()" onmouseleave="mouseleave1()">
-        <div class="data-cat-construction-update">AtjaUnots 15.10.2022.</div>
-        <img class="data-cat-construction-icon" src="assets/img/under-construction.svg">
-        <div class="data-cat-construction-title">Īstermiņa ceļu darbi</div>
-        <div class="data-cat-construction-data">
-          <span class="data-cat-construction-data-text">1 datu kopa</span>
-          <label class="data-cat-construction-data-content1">
-            <img class="data-cat-construction-data-content1-icon" src="assets/img/key2.svg" />
-            <span class="data-cat-construction-data-content1-label">API</span>
-          </label>
+  <div class="manaskopas">
+    <div class="manaskopas-title">
+      <div class="manaskopas-title-left">
+        <div class="manaskopas-title-left-stitle">
+          <span class="manaskopas-title-left-stitle-font"><b>Manas datu kopas</b></span>
+          <img class="manaskopas-title-left-stitle-icon" src="assets/img/wi.svg">
         </div>
-        <div id="button1" hidden="true">
-          <button class="data-cat-construction-button" type="button">
-            <img class="data-cat-construction-button-icon" src="assets/img/next.svg" />
-            <p class="data-cat-construction-button-font">Aplūkot</p>
-          </button>
+        <div class="manaskopas-title-left-sub">
+          <span class="manaskopas-title-left-sub-font">Sākums</span>
+          <img class="manaskopas-title-left-sub-icon" src="assets/img/up.svg">
+          <span class="manaskopas-title-left-sub-font">LIETOTĀJA IESPĒJAS</span>
+          <img class="manaskopas-title-left-sub-icon" src="assets/img/up.svg">
+          <span class="manaskopas-title-left-sub-font">PUBLICĒTIE DATI</span>
         </div>
       </div>
-      <div class="data-cat-construction" onmouseover="mouseover2()" onmouseleave="mouseleave2()">
-        <div class="data-cat-construction-update">REĀLLAIKA<img class="data-cat-construction-dot"
-            src="./assets/img/state_small.png" /></div>
-        <img class="data-cat-construction-icon" src="assets/img/road.svg">
-        <div class="data-cat-construction-title">Autoceļu klasifikācija</div>
-        <div class="data-cat-construction-data">
-          <span class="data-cat-construction-data-text">2 datu kopas</span>
-          <label class="data-cat-construction-data-content2">
-            <span class="data-cat-construction-data-content2-label">LONGER TEXT TAG</span>
-          </label>
-        </div>
-        <div id="button2" hidden="true">
-          <button class="data-cat-construction-button" type="button">
-            <img class="data-cat-construction-button-icon" src="assets/img/next.svg" />
-            <p class="data-cat-construction-button-font">Aplūkot</p>
-          </button>
-        </div>
-      </div>
-      <div class="data-cat-construction" onmouseover="mouseover3()" onmouseleave="mouseleave3()">
-        <div class="data-cat-construction-update">REĀLLAIKA<img class="data-cat-construction-dot"
-            src="./assets/img/state_small.png" /></div>
-        <img class="data-cat-construction-icon" src="assets/img/parking.svg">
-        <div class="data-cat-construction-title">Stāvlaukumi</div>
-        <div class="data-cat-construction-data">
-          <span class="data-cat-construction-data-text">2 datu kopas</span>
-          <label class="data-cat-construction-data-content3">
-            <img class="data-cat-construction-data-content3-icon" src="assets/img/key2.svg" />
-            <span class="data-cat-construction-data-content3-label">HOVER TAG</span>
-          </label>
-        </div>
-        <div id="button3" hidden="true">
-          <button class="data-cat-construction-button" type="button">
-            <img class="data-cat-construction-button-icon" src="assets/img/next.svg" />
-            <p class="data-cat-construction-button-font">Aplūkot</p>
-          </button>
-        </div>
-      </div>
-      <div class="data-cat-construction" onmouseover="mouseover4()" onmouseleave="mouseleave4()">
-        <div class="data-cat-construction-update">AtjaUnots 05.09.2022.</div>
-        <img class="data-cat-construction-icon" src="assets/img/wild-animals-sign.svg">
-        <div class="data-cat-construction-title">Dzīvnieki, cilvēki, šķēršļi, atkritumi uz ceļa</div>
-        <div class="data-cat-construction-data">
-          <span class="data-cat-construction-data-text">1 datu kopa</span>
-        </div>
-        <div id="button4" hidden="true">
-          <button class="data-cat-construction-button" type="button">
-            <img class="data-cat-construction-button-icon" src="assets/img/next.svg" />
-            <p class="data-cat-construction-button-font">Aplūkot</p>
-          </button>
-        </div>
-      </div>
-      <div class="data-cat-construction" onmouseover="mouseover5()" onmouseleave="mouseleave5()">
-        <div class="data-cat-construction-update">AtjaUnots 05.09.2022.</div>
-        <img class="data-cat-construction-icon" src="assets/img/streets.svg">
-        <div class="data-cat-construction-title">Statiskie dati par autoceļiem: tīkla posmi un fiziskie raksturl</div>
-        <div class="data-cat-construction-data">
-          <span class="data-cat-construction-data-text">1 datu kopa</span>
-        </div>
-        <div id="button5" hidden="true">
-          <button class="data-cat-construction-button" type="button">
-            <img class="data-cat-construction-button-icon" src="assets/img/next.svg" />
-            <p class="data-cat-construction-button-font">Aplūkot</p>
-          </button>
-        </div>
-      </div>
-      <div class="data-cat-construction">
-        <div class="data-cat-construction-background">
-          <div class="data-cat-construction-background-text">
-            Visas kategorijas
-            <img class="data-cat-construction-background-text-icon" src="assets/img/next.svg">
+      <div class="manaskopas-title-right">
+        <div class="manaskopas-title-right-area">
+          <div class="manaskopas-title-right-area-sub">
+            <span class="manaskopas-title-right-area-sub-font">Tu esi autorizējies kā:</span>
+            <img class="manaskopas-title-right-area-sub-icon" src="assets/img/info.svg">
           </div>
+          <span class="manaskopas-title-right-area-sub-font"><b>roberts@roberts.com</b></span><br>
+          <br />
+          <span class="manaskopas-title-right-area-sub-font">Profila tips: <b>Datu devējs</b></span>
         </div>
       </div>
     </div>
   </div>
-  <div class="data-provide">
-    <div class="data-provide-title">Datus sniedz</div>
-    <div class="data-provide-content">
-      <div class="data-provide-content-item">
-        <div class="data-provide-content-item-title">
-          <img class="data-provide-content-item-title-icon" src="assets/img/lvc-logo.svg">
-        </div>
-        <div class="data-provide-content-item-description">Latvijas Valsts Ceļi</div>
-        <div class="data-provide-content-item-link">
-          <a>www.lvceli.lv</a>
-          <img src="assets/img/link.svg">
-        </div>
-      </div>
-      <div class="data-provide-content-item">
-        <div class="data-provide-content-item-title">
-          <img class="data-provide-content-item-title-icon" src="assets/img/LVGlogo.png">
-        </div>
-        <div class="data-provide-content-item-description">Latvijas Vides ģeoloģijas un meteoroloģijas centrs</div>
-        <div class="data-provide-content-item-link">
-          <a>videscentrs.lvgmc.lv</a>
-          <img src="assets/img/link.svg">
-        </div>
-      </div>
-      <div class="data-provide-content-item">
-        <div class="data-provide-content-item-background">
-          <div class="data-provide-content-item-background-text">
-            Visi datu devēji
-            <img class="data-provide-content-item-background-text-icon" src="assets/img/next.svg">
-          </div>
-        </div>
-      </div>
+  <div class="manaskopas-main">
+    <div class="manaskopas-main-sub1">
+      <span class="manaskopas-main-sub1-font"><b>Publicētās datu kopas</b></span>
+    </div>
+
+    <div style="overflow-x: auto; border-radius: 4px;">
+      <table class="manaskopas-main-tb1">
+        <tr class="manaskopas-main-tb1-tr1">
+          <th class="manaskopas-main-tb1-tr1-th1">
+            <span class="manaskopas-main-tb1-tr1-th1-font1">Datu kopa</span>
+            <img class="manaskopas-main-tb1-tr1-th1-sort" src="assets/img/sort.svg">
+          </th>
+          <th>
+            <span class="manaskopas-main-tb1-tr1-th1-font1">Statuss</span>
+          </th>
+          <th>
+            <span class="manaskopas-main-tb1-tr1-th1-font1">Atjaunots</span>
+          </th>
+        </tr>
+        <tr class="manaskopas-main-tb1-tr2">
+          <td>
+            <div class="manaskopas-main-tb1-tr2-td1">
+              <img class="manaskopas-main-tb1-tr2-td1-warm" src="assets/img/warn.svg">
+              <span class="manaskopas-main-tb1-tr2-td1-font">Dzīvnieki, kas nosprosto ceļu</span>
+              <img class="manaskopas-main-tb1-tr2-td1-warm1" src="assets/img/warm1.svg">
+            </div>
+          </td>
+          <td style="width: 208px;">
+            <div class="manaskopas-main-tb1-tr2-td2">
+              <button class="manaskopas-main-tb1-tr2-td2-btn">
+                <span class="manaskopas-main-tb1-tr2-td2-btn-font"><b>PUBLICĒTS</b></span>
+              </button>
+            </div>
+
+          </td>
+          <td>
+            <div class="manaskopas-main-tb1-tr2-td3">
+              <div class="manaskopas-main-tb1-tr2-td3-left">
+                <span>15.01.2023.</span>
+              </div>
+              <div class="manaskopas-main-tb1-tr2-td3-right">
+                <div class="manaskopas-main-tb1-tr2-td3-right-part1">
+                  <img class="manaskopas-main-tb1-tr2-td3-right-part1-sub1" src="assets/img/map.png">
+                  <span class="manaskopas-main-tb1-tr2-td3-right-part1-font1">Uz kartes</span>
+                </div>
+                <div class="manaskopas-main-tb1-tr2-td3-right-part1">
+                  <img class="manaskopas-main-tb1-tr2-td3-right-part2-sub2" src="assets/img/pen.svg">
+                  <span class="manaskopas-main-tb1-tr2-td3-right-part2-font2">Labot</span>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="manaskopas-main-sub3">
+      <span class="manaskopas-main-sub3-font"><b>Izmēģinājuma paraugdatu kopas</b></span>
+    </div>
+
+    <div style="overflow-x: auto; border-radius: 4px;">
+      <table class="manaskopas-main-tb2">
+        <tr class="manaskopas-main-tb2-tr1">
+          <th class="manaskopas-main-tb2-tr1-th1">
+            <span class="manaskopas-main-tb2-tr1-th1-font1">Datu kopa</span>
+            <img class="manaskopas-main-tb2-tr1-th1-sort" src="assets/img/sort.svg">
+          </th>
+          <th>
+            <span class="manaskopas-main-tb2-tr1-th1-font1">Statuss</span>
+          </th>
+          <th>
+            <span class="manaskopas-main-tb2-tr1-th1-font1">Atjaunots</span>
+          </th>
+        </tr>
+        <tr class="manaskopas-main-tb2-tr2">
+          <td>
+            <div class="manaskopas-main-tb2-tr2-td1">
+              <span class="manaskopas-main-tb2-tr2-td1-font">Dzīvnieki, kas nosprosto ceļu</span>
+              <img class="manaskopas-main-tb2-tr2-td1-warm1" src="assets/img/warm1.svg">
+            </div>
+          </td>
+          <td style="width: 208px;">
+            <div class="manaskopas-main-tb2-tr2-td2">
+              <button class="manaskopas-main-tb2-tr2-td2-btn">
+                <span class="manaskopas-main-tb2-tr2-td2-btn-font"><b>IZMĒĢINĀJUMĀ</b></span>
+              </button>
+            </div>
+
+          </td>
+          <td>
+            <div class="manaskopas-main-tb2-tr2-td3">
+              <div class="manaskopas-main-tb2-tr2-td3-left">
+                <span>15.01.2023.</span>
+              </div>
+              <div class="manaskopas-main-tb2-tr2-td3-right">
+                <div class="manaskopas-main-tb2-tr2-td3-right-part2">
+                  <img class="manaskopas-main-tb2-tr2-td3-right-part2-sub2" src="assets/img/pen.svg">
+                  <span class="manaskopas-main-tb2-tr2-td3-right-part2-font2">Labot</span>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="manaskopas-main-sub5">
+      <button class="manaskopas-main-sub5-btn5" type="button">
+        <img class="manaskopas-main-sub5-icon" src="assets/img/add.svg" />
+        <p class="manaskopas-main-sub5-font">Jauna datu kopa</p>
+      </button>
     </div>
   </div>
+
   <div class="w3-container w3-center w3-margin-top">
     <img class="footer-up-container-image" src="assets/img/small-slide1.png" />
   </div>
   <div class="footer-up-container"></div>
   <div class="footer-middle-container">
     <div class="footer-middle-container-menus">
-      <img class="footer-middle-container-menus-icon" src="assets/img/location.png">
-      <div class="footer-middle-container-menu">
-        <div class="footer-middle-container-menus-link">
-          <img class="footer-middle-container-menus-link-icon" src="assets/img/up1.svg"
-            style="color: white; fill: white;"> Datu katalogs
-        </div>
-        <div class="footer-middle-container-menus-link">
-          <img class="footer-middle-container-menus-link-icon" src="assets/img/up1.svg"> Interaktīvā karte
-        </div>
-        <div class="footer-middle-container-menus-link">
-          <img class="footer-middle-container-menus-link-icon" src="assets/img/up1.svg"> Autorizēties
+      <div class="footer-middle-container-menus-cats">
+        <img class="footer-middle-container-menus-icon" src="assets/img/location.png">
+        <div class="footer-middle-container-menu">
+          <div class="footer-middle-container-menus-link">
+            <img class="footer-middle-container-menus-link-icon" src="assets/img/up1.svg">Datu katalogs
+          </div>
+          <div class="footer-middle-container-menus-link">
+            <img class="footer-middle-container-menus-link-icon" src="assets/img/up1.svg">Interaktīvā karte
+          </div>
+          <div class="footer-middle-container-menus-link">
+            <img class="footer-middle-container-menus-link-icon" src="assets/img/up1.svg">Autorizēties
+          </div>
         </div>
       </div>
       <div class="footer-middle-container-social">
@@ -418,7 +380,8 @@
         </div>
         <div class="footer-middle-container-social-mail">
           <div class="footer-middle-container-social-mail-info">
-            npp@npp.gov.lv<br />
+            <span>+377 67 028 168</span><br />
+            <span>npp@npp.gov.lv</span><br />
             <u>Kontakti</u>
           </div>
         </div>

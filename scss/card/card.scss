@@ -4,6 +4,7 @@
 .card {
     margin-top: 50px;
     color: #4d4f50;
+    font-size: 19px;
     font-family: $NPPfont;
 
     &-header {
@@ -12,26 +13,17 @@
         justify-content: space-between;
         flex-wrap: wrap;
 
-        @include responsive(large-laptop) {
-            padding: 30px;
-        }
-
-        @media (width < 1024px) {
-            padding: 30px;
-            display: flex;
-            justify-content: center;
-        }
-
         &-title {
             &-info {
                 font-size: 47px;
-                font-weight: bold;
+                font-weight: 600;
                 color: #4d4f50;
                 text-align: center;
             }
         }
         &-path {
-            font-size: 20px;
+            font-size: 19px;
+            text-transform: uppercase;
             
             & span {
                 cursor: pointer;
@@ -40,7 +32,7 @@
             & img {
                 margin: 0 10px;
                 rotate: 90deg;
-                filter: invert(0.5);
+                filter: invert(28%) sepia(7%) saturate(147%) hue-rotate(155deg) brightness(98%) contrast(88%);;
                 width: 9px;
             }
         }
@@ -48,34 +40,67 @@
         &-help {
             display: flex;
             align-items: center;
-            width: 250px;
+            width: 280px;
+            color: #80808075;
+
+            @media (width < 1024px) {
+                display: none;
+            }
 
             & img {
-                width: 15px;
+                width: 18px;
                 margin: 10px;
-                filter: invert(0.5);
+                filter: brightness(0.8) invert(0.8);
             }
 
             & span {
                 margin: 10px;
+                color: #545454;
                 cursor: pointer;
+
+                &:hover {
+                    color: #44daf8;
+                }
             }
         }
     }
 
     &-content {
         margin-top: 60px;
+        font-size: 19px;
+        @include responsive(large-laptop) {
+            padding: 0 30px;
+        }
+
+        @media (width < 1024px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0 30px;
+        }
         
         &-left {
             margin-right: 50px;
             width: 450px;
 
+            @media (width < 1024px) {
+                margin-right: unset;;
+            }
+
+            @media (width < 375px) {
+                width: 300px;
+            }
+
             &-owner {
                 width: 100%;
-                font-size: 18px;
+                font-size: 19px;
                 border: 1px solid #f4f4f6;
                 border-radius: 5px;
-                padding: 50px;
+                padding: 40px;
+
+                @media (width < 768px) {
+                    padding: 20px;
+                }
 
                 &-mark {
                     margin-top: 50px;
@@ -90,7 +115,7 @@
                     & img {
                         width: 40px;
                         margin-right: 10px;
-                        filter: invert(96%) sepia(2%) saturate(11%) hue-rotate(193deg) brightness(90%) contrast(97%);
+                        filter: invert(25%) sepia(2%) saturate(11%) hue-rotate(193deg) brightness(90%) contrast(97%);
                     }
                 }
 
@@ -100,7 +125,7 @@
                     background-color: #f4f4f6;
                     width: 100%;
                     height: 50px;
-                    font-size: 18px;
+                    font-size: 19px;
                     align-items: center;
                     margin-top: 30px;
 
@@ -108,18 +133,24 @@
                         width: 20px;
                         margin-right: 15px;
                     }
+
+                    &-label {
+                        min-width: 122px;
+                    }
                 }
 
                 &-update-data {
                     margin-top: 30px;
+                    display: flex;
+                    flex-direction: column;
 
                     &-range {
                         cursor: pointer;
                         & img {
-                            width: 15px;
+                            width: 10px;
                             margin: -2px 0 0 2px;
                             rotate: 180deg;
-                            filter: invert(0.5);
+                            filter: invert(28%) sepia(7%) saturate(147%) hue-rotate(155deg) brightness(98%) contrast(88%);;
                         }
                     }
                 }
@@ -137,7 +168,11 @@
                         cursor: pointer;
 
                         &:hover {
-                            box-shadow: 0 -2px #309dbc;
+                            background-color: #02badf;
+                        }
+
+                        &:active {
+                            box-shadow: 0 -3px #309dbc;
                         }
 
                         & img {
@@ -164,13 +199,22 @@
             align-items: center;
             padding: 0 30px;
             color: white;
+            cursor: pointer;
+            border: 2px solid white;
             background-image: url(assets/img/card-back.png);
             background-repeat: no-repeat;
             background-size: cover;
 
+            @media (width < 1024px) {
+                margin-bottom: 50px;
+            }
+
+            &:hover {
+                outline: 2px solid #44daf8;
+            }
+
             &-content {
-                font-size: 20px;
-                cursor: pointer;
+                font-size: 22px;
                 & img {
                     rotate: 180deg;
                     filter: brightness(0) invert(1);
@@ -186,6 +230,8 @@
                 &-tabbutton {
                     overflow: hidden;
                     border: 1px solid #f4f4f6;
+                    border-radius: 5px 5px 0 0;
+
                     & button {
                         background-color: inherit;
                         float: left;
@@ -194,16 +240,20 @@
                         cursor: pointer;
                         padding: 40px 50px;
                         transition: 0.3s;
-                        font-size: 17px;
+                        font-size: 19px;
                         display: flex;
                         align-items: center;
-        
-                        &:hover {
-                            background-color: #ddd;
+
+                        @include responsive(large-laptop) {
+                            padding: 20px;
                         }
-            
-                        &.active {
-                            background-color: #ccc;
+
+                        @media (width < 768px) {
+                            padding: 20px;
+                        }
+        
+                        &:hover, &.active {
+                            background-color: #f4f4f6;
                         }
         
                         & img {
@@ -217,18 +267,23 @@
                 &-tabpane {
                     display: none;
                     border: 1px solid #f4f4f6;
-                    border-radius: 5px;
+                    border-radius: 0 0 5px 5px;
                     border-top: none;
     
                     &-header {
-                        padding: 50px 50px;
+                        padding: 40px;
+
+                        @media (width < 768px) {
+                            padding: 20px;
+                        }
+
                         &-title {
-                            font-size: 20px;
+                            font-size: 26px;
                             margin: 0;
                         }
         
                         &-description {
-                            font-size: 18px;
+                            font-size: 19px;
                             margin: 0;
                         }
                     }
@@ -239,11 +294,17 @@
                     }
 
                     &-content {
-                        padding: 50px;
+                        padding: 40px;
+                        display: flex;
+                        font-size: 19px;
+                        flex-direction: column;
 
+                        @media (width < 768px) {
+                            padding: 20px;
+                        }
 
                         & span {
-                            font-size: 16px;
+                            width: fit-content;
                         }
 
                         &-format {
@@ -253,30 +314,41 @@
                             font-size: 16x;
 
                             &-label {
-                                font-size: 18px;
+                                font-size: 19px;
                             }
 
-                            & span {
-                                padding: 0 10px;
+                            &-csv, &-json {
+                                height: 30px;
+                                padding: 5px 10px;
                                 margin: 5px;
                                 font-size: 14px;
                                 font-weight: 600;
-                                border: 1px solid black;
-                                border-radius: 5px;
+                                border: 1px solid #4d4f50;
+                                border-radius: 3px;
+                                display: flex;
+                                justify-content: space-evenly;
+                                align-items: center;
+                                color: #4d4f50;
                                 cursor: default;
+                            }
+
+                            &-csv:hover, &-json:hover {
+                                color: white;
+                                background-color: #4d4f50;
                             }
                         }
 
                         &-download {
-                            margin: 20px;
+                            margin: 20px 0;
                             &-item {
                                 margin: 5px;
+                                display: flex;
+                                flex-wrap: wrap;
                                 & span {
-                                    margin: 5px;
+                                    margin: 0 10px;
                                 }
                                 & img {
-                                    margin-right: 5px;
-                                    width: 14px;
+                                    width: 15px;
                                     filter: invert(77%) sepia(91%) saturate(1896%) hue-rotate(164deg) brightness(99%) contrast(101%);
                                     cursor: pointer;
                                 }
@@ -294,10 +366,11 @@
                             margin-top: 10px;
                             cursor: pointer;
                             & img {
-                                width: 15px;
+                                width: 9px;
                                 rotate: 180deg;
                                 margin-top: -6px;
-                                filter: invert(0.5);
+                                filter: invert(28%) sepia(7%) saturate(147%) hue-rotate(155deg) brightness(98%) contrast(88%);;
+                                margin-left: 5px;     
                             }
                         }
 
@@ -321,35 +394,95 @@
                                     filter: invert(0.8);
                                 }
                                 & span {
-                                    font-size: 18px;
+                                    font-size: 19px;
                                     font-weight: 600;
                                 }
                             }
 
                             &-description {
-                                margin: 30px 0;
                                 max-height: 0;
                                 overflow: hidden;
                                 transition: max-height 0.2s ease-out;
+
+                                &-grid {
+                                    display: none;
+                                    @media (width < 768px) {
+                                        display: block;
+                                    }
+                                }
+
+                                & table {
+                                    display: block;
+                                    width: 100%;
+                                    font-size: 19px;
+                                    margin: 15px 0;
+                                    padding: 0 30px;
+                                    border-spacing: 0;
+
+                                    @media (width < 768px) {
+                                        display: none;
+                                    }
+
+                                    @include responsive(large-laptop) {
+                                        padding: unset;
+                                        font-size: 16px;
+                                    }
+                                }
+
+                                &-label {
+                                    text-align: right;
+                                    font-weight: 600;
+                                    padding: 0 30px 20px 0;
+                                    border-right: 1px solid #f4f4f6;
+                                    vertical-align: initial;
+                                }
+
+                                &-info {
+                                    text-align: left;
+                                    padding: 0 0 20px 30px;
+                                    font-weight: unset;
+                                    display: flex;
+                                    flex-direction: column;
+                                    border-left: 1px solid #f4f4f6;
+                                    vertical-align: initial;
+
+                                    &-cat{
+                                        padding: 5px 20px;
+                                        margin: 5px 0;
+                                        font-size: 16px;
+                                        border-radius: 5px;
+                                        text-transform: uppercase;
+                                        background-color: #4d4f50;
+                                        color: white;
+                                    }
+                                }
 
                                 &-item {
                                     margin: 15px 0;
                                     padding: 0 30px;
                                     display: flex;
                                     font-size: 18px;
-                                    &-label {
-                                        border-right: 1px solid #f4f4f6;
-                                        text-align: right;
-                                        width: 50%;
-                                        font-weight: 600;
-                                        padding: 0 30px;
-                                    }
-                                    &-info {
+                                    flex-direction: column;
 
-                                        width: 50%;
+                                    @media (width < 375px) {
+                                        padding: 0 10px;
+                                        font-size: 16px;
+                                    }
+
+                                    &-label {
+                                        font-weight: 600;
+                                    }
+
+                                    &-info {
                                         text-align: left;
                                         padding: 0 30px;
-                                        border-left: 1px solid #f4f4f6;
+                                        display: flex;
+                                        flex-direction: column;
+
+                                        @media (width < 375px) {
+                                            padding: 0 10px;
+                                        }
+
                                         &-cat{
                                             padding: 5px 20px;
                                             margin: 5px 0;
@@ -366,5 +499,25 @@
                 }
             }
         }
+    }
+}
+
+.menu-item.active {
+    .accordion-open-icon-plus{
+        display: block;
+    }
+
+    .accordion-open-icon-minus{
+        display: none;
+    }
+}
+
+.menu-item {
+    .accordion-open-icon-plus{
+        display: none;
+    }
+
+    .accordion-open-icon-minus{
+        display: block;
     }
 }

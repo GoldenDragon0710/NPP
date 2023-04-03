@@ -1,0 +1,98 @@
+.slidebar {
+  display: flex;
+  justify-content: center;
+  margin-top: 56px;
+}
+.slidebar-slideshow {
+  width: 73.3%;
+  max-width: 1031px;
+  max-height: 476px;
+  margin-right: 35px;
+  position: relative;
+}
+@media (width < 1024px) {
+  .slidebar-slideshow {
+    margin: 0 50px;
+    width: 100%;
+  }
+}
+@media (width < 425px) {
+  .slidebar-slideshow {
+    margin: 0 20px;
+    width: 100%;
+  }
+}
+.slidebar-slideshow-slides {
+  display: none;
+}
+.slidebar-slideshow-fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.slidebar-slideshow-prev, .slidebar-slideshow-next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  margin: -53px 20px;
+  padding: 10px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.slidebar-slideshow-next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.slidebar-slideshow-dots {
+  text-align: center;
+  margin-top: -35px;
+}
+.slidebar-slideshow-dots-dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.slidebar-slideshow-dots-dot:hover {
+  background-color: #717171;
+}
+.slidebar-map-container {
+  width: 26.7%;
+  max-height: 476px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  /*
+      breakpoints are viewport arbitrary values,
+      they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+      the breakpoints I used were inspired by Bootstrap =>
+      https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  */
+}
+@media (width < 1024px) {
+  .slidebar-map-container {
+    display: none;
+  }
+}
+
+.active {
+  background-color: #717171;
+}
+
+@keyframes slidebar-slideshow-fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=slide.css.map */
